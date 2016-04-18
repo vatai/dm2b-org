@@ -122,9 +122,12 @@
 **** 8.1.13 Tétel
      Ha G egy félcsoport, akkor az alábbi feltételek ekvivalensek:
      + (1) G csoport;
-     + (2) G $\neq$ 0 és minden a,b eleme G esetén egy és csak egy olyan x eleme G, illyetve y eleme G létezik, amelyre 
-       ax = b, illetve ya = b (elvégezhető az osztás);
-     + (3) G $\neq$ 0 és minden a,b eleme G esetén létezik olyan x eleme G, illetve y eleme G, amelyre ax = b (a művelet invertálható).
+     + (2) G $\neq$ 0 és minden a,b eleme G esetén egy és csak egy
+       olyan x eleme G, illyetve y eleme G létezik, amelyre ax = b,
+       illetve ya = b (elvégezhető az osztás);
+     + (3) G $\neq$ 0 és minden a,b eleme G esetén létezik olyan x
+       eleme G, illetve y eleme G, amelyre ax = b (a művelet
+       invertálható).
      + 8.1.27 Állítás
      + 8.1.29 Következmény
      + 8.1.33 Állítás
