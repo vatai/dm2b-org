@@ -1,0 +1,201 @@
+#+TITLE: Diszkrét Matematika 2 Vizsgatematika
+#+AUTHOR: Mikecz Márk László
+#+EMAIL: mikecz.mark.laszlo[at]gmail[dot]com
+#+LANGUAGE: hu
+
+* Gráfok [100%]
+
+** DONE Definíciók [100%]
+
+*** DONE Irányítatlan Gráfok
+
+Irányítatlan gráf; Izolált csúcs; Illeszkedési reláció; Két csúcs szomszédos; Üres gráf; Hurokél; 
+Párhuzamos él(Többszörös él); Véges gráf; Végtelen gráf; Fokszám; Reguláris gráf; Gráf fokszám és él összefüggés; 
+Két gráf izomorf; Descartes-szorzat; Páros gráf(Kétrészes gráf); Részgráf; Szupergráf; Telített részgráf;
+Komplementer gráf; Séta; Vonal; Út; Kör; Összefüggő; Fa; Erdő; Feszítőfa; Feszítőerdő; Vágás; Erdő; Euler-vonal;
+Hamilton-út; Hamilton-kör; Cimkézett és súlyozott gráf
+
+*** DONE Irányított Gráf
+
+Irányított gráf; Irányított gráf megfordítása; Szigorúan párhuzamos él; Csúcs kifoka; Csúcs befoka;
+Kifok, befok, él összefüggés; Irányított gráfok izomorfiája; Véges gráfok éllistás ábrázolása; Irányított részgráf;
+Irányított séta; Irányított vonal; Irányított út; Irányított kör; Erős összefüggőség; Irányított fa;
+Kromatikus szám; Gráfok mátrixai; Síkban rajzolható gráf; Jól színezés; 
+
+** DONE Tétel [100%]
+
+*** DONE Irányítatlan Gráfok
+
+**** Dirac Tétel
+
+Ha G egy egyszerű, legalább 3 pontú gráf, amelynek minden pontjának legalább $\left(\frac{|V(G)|}{2}\right)$ a foka, akkor G tartalmaz Hamilton-kört.
+
+**** Ore Tétel
+
+Legyen G egy olyan n $\geq$ 3 pontú egyszerű gráf melyben $\forall$ x,y $\in$ V(G) nem szomszédos pontpárra teljesül a d(x) + d(y) $\geq$ n feltétel. Ekkor G-ben van Hamilton-kör.
+
+*** DONE Irányított Gráfok
+
+
++ Dijkstra módszer (7.2.22)
+
+** DONE Tétel Bizonyítás [100%]
+
+*** DONE Irányítatlan Gráfok [100%]
+
+**** DONE 7.1.20 Állítás
+
+Az előző pont jelöléseivel, bármely G gráfban a különböző v és v' csúcsokat összekötő sétából alkalmasan törölve ei,vi párokat,
+a v-t v'-vel összekötő utat kaphatunk.
+
+**** DONE 7.1.21 Állítás
+
+Bármely G gráfban egy legalább egy hosszúságú zárt vonal véges sok páronként éldiszjunkt kör egyesítése.
+
+**** DONE 7.1.29 Tétel
+
+Egy G egyszerű gráfra a következő feltételek ekvivalensek:
++ (1) G fa;
++ (2) G összefüggő, de bármely él törlésével a kapott részgráf már nem összefüggő;
++ (3) ha a v és v' a G különböző csúcsai, akkor pontosan egy út van v-ből v'-be;
++ (4) G-nek nincs köre, de bármilyen új él hozzávételével kapott gráf már tartalmaz kört;
+
+**** DONE 7.1.30 Tétel
+
+Ha egy G véges gráfban nincs kör, de van él, akkor van legalább két elsőfokú csúcs.
+
+**** DONE 7.1.31 Tétel
+
+Egy G egyszerű véges, n csúcsú gráfra a következő feltételek ekvivalensek:
++ (1) G fa;
++ (2) G-ben nincs kör és n-1 éle van;
++ (3) G összefüggő és n-1 éle van;
+
+**** DONE 7.1.37 Állítás
+
+Minden összefüggő véges gráfnak létezik feszítőfája.
+
+**** DONE 7.1.38 Állítás
+
+Egy G = ($\varphi$,E,V) összefüggő véges gráfban létezik legalább #E-#V+1 kör, amelyek élhalmaza különböző.
+
+**** DONE 7.1.41 Állítás
+
+     Egy G = ($\varphi$,E,V) összefüggő véges gráfban létezik legalább #V-1 különböző vágás.
+
+**** DONE 7.1.45 Állítás
+
+     Egy összefüggő véges gráfban pontosan akkor létezik zárt Euler-vonal, ha minden csúcs páros fokú. Ha véges összefüggő gráf 2s páratlan fokú csúcsot tartalmaz, ahol s eleme $\mathbb{N}$, akkor a gráf s darab páronként éldiszjunkt nyílt vonal egyesítése.
+
+**** DONE Kruskal algoritmus
+
+*** DONE Irányított Gráfok [100%]
+
+**** DONE König-lemma (7.2.17)
+
+     Ha egy végtelen irányított fában minden csúcsnak csak véges sok gyereke van, akkor van olyan, a gyökérrel induló v0,v1,v2,...
+     végtelen csúcssorozat, amelyben vn szülője vn+1-nek. (n $\in$ $\mathbb{N}$).
+
+* Algebra
+
+** Csoportok [33%]
+
+*** DONE Definíciók 
+
+Grupoid; Félcsoport; Monoid; Csopot; Ábel-csoport; Homomorfizmus; Monomirfizmus; Epimorfizmus; Izomorfizmus; 
+Endomorfizmus; Automorfizmus; Reprezentáció; Részfélcsoport; Részcsoport; Generátum; Rend; Mellékosztályok;
+Normálosztó; Faktorcsoport; Homomorfizmus magja; Direkt szorzat; Permutációcsoportok; 
+
+*** TODO Tétel
+
+**** 8.1.9 Következmény
+
+Csoport homomorf képe is csoport. Kommutatív félcsoport homomorf képe is kommutatív félcsoport. Abel-csoport homomorf képe is Abel-csoport.
+
++ 8.1.14 Következmény: Egyszerűsítési szabály
++ 8.1.34 Következmény
++ 8.1.53 Következmény
++ 8.1.54 Következmény
++ 8.1.55 Következmény
++ 8.1.72 Következmény
++ 8.1.81 Következmény
++ 8.1.93 Tétel (Véges Ábel-csoportok alaptétele)
++ 8.1.102 Cayley Tétele
++ 8.1.104 Tétel
++ 8.1.105 Következmény
+
+*** TODO Tétel Bizonyítás
+
+**** 8.1.8 Tétel
+
+A homomorfizmus definíciójánál használt jelölésekkel:
+
++ (1) ha G félcsoport, akkor a homomorf képe is félcsoport;
++ (2) ha G-ben e jobb oldali egységelem, bal oldali egységelem, illetve egységelem, akkor a homomorf képében e képe jobb oldali egységelem, bal oldali egységelem, illetve egységelem;
++ (3) ha G-ben e egységelem, és g-nek g* jobb oldali inverze, bal oldali inverze, illetve inverze, akkor a homomorf képében g* képe a g képének jobb oldali inverze, bal oldali inverze, illetve inverze;
++ (4) ha G-ben g és h felcserélhetőek, akkor a homomorf képben g és h képei felcserélhetőek;
+
+**** 8.1.13 Tétel
+
+Ha G egy félcsoport, akkor az alábbi feltételek ekvivalensek:
+
++ (1) G csoport;
++ (2) G $\neq$ 0 és minden a,b eleme G esetén egy és csak egy olyan x eleme G, illyetve y eleme G létezik, amelyre 
+ax = b, illetve ya = b (elvégezhető az osztás);
++ (3) G $\neq$ 0 és minden a,b eleme G esetén létezik olyan x eleme G, illetve y eleme G, amelyre ax = b (a művelet invertálható).
+
++ 8.1.27 Állítás
++ 8.1.29 Következmény
++ 8.1.33 Állítás
++ 8.1.38 Tétel
++ 8.1.40 Tétel
++ 8.1.41 Tétel
++ 8.1.52 Tétel (Lagrange tétel)
++ 8.1.71 Tétel
++ 8.1.80 Tétel
++ 8.1.85 Tétel (Homomorfizmustétel)
+
+** Gyűrűk és Testek [%]
+
+*** TODO Definíciók
+
+Gyűrű, Nullosztómentes gyűrű, Kommutatív gyűrű, Integritási tartomány, Egységelemes integritási tartomány, 
+Gauss-gyűrűk, Ferdetestek, Euklideszi gyűrűk, Testek, Homomorfizmusok, Gyűrű karakterisztikája, Részgyűrű, 
+Ideál, Mellékosztályok, 
+
+*** TODO Tétel
+
+**** 8.2.49 Következmény
+
+*** TODO Tétel Bizonyítás
+
+**** 8.2.18 Tétel
+
+Gyűrű homomorf képe gyűrű.
+
+**** 8.2.19 Tétel 
+
+Egy R nullosztómentes gyűrűben a nem nulla elemek additív rendje megegyezik, és vagy végtelen, vagy prímszám.
+
+**** 8.2.48 Tétel
+
+Egy R gyűrű egy I ideál szerinti mellékosztályai a gyűrűnek mindkét művelettel kompatibilis osztályzását alkotják. 
+Minden, mindkét művelettel kompatibilis osztályzás esetén a nulla osztálya ideál, és az osztályzás ezen ideál szerinti 
+mellékosztályokból áll.
+
+** Polinomok [0%]
+
+** TODO Definíciók
+
+** TODO Tétel
+
+** TODO Tétel Bizonyítás
+
+
+* Kódolás [0%]
+
+** TODO Definíciók
+
+** TODO Tétel
+
+** TODO Tétel Bizonyítás
