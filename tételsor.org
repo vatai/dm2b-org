@@ -9,12 +9,13 @@
 *** DONE Irányítatlan Gráfok
     Irányítatlan gráf; izolált csúcs; illeszkedési reláció; két csúcs
     szomszédos; üres gráf; hurok\-él; párhuzamos él (többszörös él);
-    véges gráf; végtelen gráf; fok\-szám; \(n\)-reguláris gráf;
-    reguláris gráf; gráfok izomorfiája; gráfok Descartes--szorzat;
-    páros gráf (két\-részes gráf); rész\-gráf; szuper\-gráf; telített
-    rész\-gráf; rész\-gráfnak a komplementere; egyszerű gráf
-    komplementere; séta; vonal; út; kör; össze\-függőség; komponensek;
-    fa; erdő; feszítő\-fa; feszítő\-erdő; vágás; erdő; Euler--vonal;
+    véges gráf; végtelen gráf; fok\-szám; fok\-számok összege és élek
+    száma közötti összefüggés; \(n\)-reguláris gráf; reguláris gráf;
+    gráfok izomorfiája; gráfok Descartes--szorzat; páros gráf
+    (két\-részes gráf); rész\-gráf; szuper\-gráf; telített rész\-gráf;
+    rész\-gráfnak a komplementere; egyszerű gráf komplementere; séta;
+    vonal; út; kör; össze\-függőség; komponensek; fa; erdő;
+    feszítő\-fa; feszítő\-erdő; vágás; erdő; Euler--vonal;
     Hamilton--út; Hamilton--kör; címkézett és súlyozott gráf.
 *** DONE Irányított Gráf
     Irányított gráf; irányított gráf megfordítása; szigorúan
@@ -26,48 +27,17 @@
     fa; jól\-színezés; kromatikus szám; gráfok mátrixai; síkban
     rajzolható gráf; Euler formula; topologikus izomorfia; Kuratowski
     tétel.
-** DONE Tétel [100%]
-*** DONE Irányítatlan Gráfok
-**** Dirac Tétel
-     Ha G egy egyszerű, legalább 3 pontú gráf, amelynek minden
-     pontjának legalább $\left(\frac{|V(G)|}{2}\right)$ a foka, akkor
-     G tartalmaz Hamilton-kört.
-**** Ore Tétel
-     Legyen G egy olyan n $\geq$ 3 pontú egyszerű gráf melyben
-     $\forall$ x,y $\in$ V(G) nem szomszédos pontpárra teljesül a
-     d(x) + d(y) $\geq$ n feltétel. Ekkor G-ben van Hamilton-kör.
-*** DONE Irányított Gráfok
-    + Dijkstra módszer (7.2.22)
-** DONE Tétel Bizonyítás [100%]
-*** DONE Irányítatlan Gráfok [90%]
-**** TODO Állítás
-     Gráf fokszámának összege és élek számának összefüggését jellemző
-     állítás.
-**** DONE 7.1.20 Állítás
-     Az előző pont jelöléseivel, bármely G gráfban a különböző v és v'
-     csúcsokat összekötő sétából alkalmasan törölve ei,vi párokat, a
-     v-t v'-vel összekötő utat kaphatunk.
-**** DONE 7.1.21 Állítás
-     Bármely G gráfban egy legalább egy hosszúságú zárt vonal véges
-     sok páronként éldiszjunkt kör egyesítése.
-**** DONE 7.1.29 Tétel
-     Egy G egyszerű gráfra a következő feltételek ekvivalensek:
-     + (1) G fa;
-     + (2) G összefüggő, de bármely él törlésével a kapott részgráf
-       már nem összefüggő;
-     + (3) ha a v és v' a G különböző csúcsai, akkor pontosan egy út
-       van v-ből v'-be;
-     + (4) G-nek nincs köre, de bármilyen új él hozzávételével kapott
-       gráf már tartalmaz kört;
-**** DONE 7.1.30 Tétel
-     Ha egy G véges gráfban nincs kör, de van él, akkor van legalább két
-     elsőfokú csúcs.
-**** DONE 7.1.31 Tétel
-     Egy G egyszerű véges, n csúcsú gráfra a következő feltételek
-     ekvivalensek:
-     + (1) G fa;
-     + (2) G-ben nincs kör és n-1 éle van;
-     + (3) G összefüggő és n-1 éle van;
+** DONE Tétel 
+*** Bizonyítás nélkül
+    Dirac és Ore tétel
+     (https://hu.wikipedia.org/wiki/Hamilton-k%C3%B6r); Dijkstra
+     módszer (7.2.22).
+*** DONE Bizonyítással [90%]
+**** DONE Állíŧás arról hogyan lehet sétából utat kapni (7.1.20)
+**** DONE Állítás a zárt vonalak jellemzéséről körökkel (7.1.21)
+**** DONE Fa ekvivalens definícióiról szóló tétel (1+3 állítás ekvivalenciája) (7.1.29)
+**** DONE Kör\-mentes fák és első\-fokú csúcsok kapcsolatát leíró állítás (7.1.30)
+**** DONE Fákban, a csúcsok és élek számának összefüggését leíró tétel (7.1.31)
 **** DONE 7.1.37 Állítás
      Minden összefüggő véges gráfnak létezik feszítőfája.
 **** DONE 7.1.38 Állítás
