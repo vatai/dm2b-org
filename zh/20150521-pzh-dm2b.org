@@ -1,0 +1,35 @@
+# -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
+#+SETUPFILE: inc-zh.org
+#+TITLE:
+#+AUTHOR:
+#+DATE:
+#+LATEX_HEADER: \usepackage{multicol}
+* Diszkrét matematika II. - Pót ZH1 - 2015-05-21. Név/csoport: 
+  #+LATEX: \begin{multicols}{2}
+  1. Rajzolj olyan 8 pontú egyszerű gráf, melyben a csúcsok foka rendre:
+     #+ATTR_LATEX: :environment inparaenum
+     1) $6, 6, 6, 4, 3, 2, 2, 1$;
+     2) $7, 6, 6, 6, 3, 2, 2, 0$;
+     3) $6, 6, 4, 4, 3, 2, 2, 1$;
+     4) $6, 6, 4, 4, 2, 2, 2, 1$;
+  2. Bizonyítsd be hogy van irányított zárt Euler vonal egy olyan
+     gráfban amelyben $d^-(v)=2=d^+(v)$ minden $v$ csúcsra.
+  3. Bizonyítsd be hogy minden legalább két csúcsot tartalmazó fa egy
+     páros gráf.
+  4. Legyen $n=14$. Mutasd meg hogy $(\mathbb{Z}_{n}^*,\cdot)$
+     csoportot alkot, ahol $\mathbb{Z}_{n}^* = \{ \overline{k} \in
+     \mathbb{Z}_{n} : (k,n)=1 \}$.
+  5. Bizonyítsd be hogy $c\mapsto (\begin{smallmatrix} 1&c\\ 0&1
+     \end{smallmatrix})$ egy homomorfizmus $(\mathbb{R},+)$ és
+     $(\{(\begin{smallmatrix} 1&c\\0&1
+     \end{smallmatrix}):c\in\mathbb{R}\},\cdot)$ között.
+  6. A $D_n$ diéder csoportban, ahol $n=18$, legyen $g_1=\tau
+     \circ \varepsilon^4 \circ \tau^5$, $g_2=\tau^{25} \circ
+     \varepsilon^{21}$.
+     #+ATTR_LATEX: :environment inparaenum
+     1) Mi $D_n$ rendje?
+     2) Egyszerűsítsd $g_1$, $g_2$ és $g_1\circ g_2$ elemeket.
+     3) Mik a $g_1$, $g_2$ és $g_1\circ g_2$ elemek által generált
+        rész\-csoportok?
+     4) Mi $g_1$, $g_2$ és $g_1\circ g_2$ rendje?
+  #+LATEX: \end{multicols}

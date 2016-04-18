@@ -1,0 +1,389 @@
+# -*- mode:org; mode: flyspell; ispell-local-dictionary: "hu" -*-
+
+#+SETUPFILE: p-common.org
+
+#+TITLE: Diszkrét matematika 2 b szak\-irány kérdések
+* Gráfok
+1. Definiálja a gráf, csúcsok, élek és illeszkedési leképezés
+   fogalmát.
+2. Definiálja az "illeszkedik", "végpontja" és "izolált csúcs"
+   fogalmakat.
+3. Definiálja az üres gráf és az illeszkedési reláció fogalmát.
+4. Definiálja csúcsok, illetve élek szomszédosságát.
+5. Definiálja a hurok\-él és a párhuzamos élek fogalmát.
+6. Definiálja az egyszerű gráf és a véges gráf fogalmát.
+7. Definiálja gráfban a fok\-szám és a reguláris gráf fogalmát.
+8. Mit mondhatunk gráfban a fok\-számok összegéről?
+9. Definiálja gráfok izomorfiáját.
+10. Mondjon elégséges feltételt arra, hogy két gráf ne legyen izomorf.
+11. Mondjon elégséges feltételt arra, hogy két egyszerű gráf izomorf
+    legyen.
+12. Definiálja a teljes gráf fogalmát.
+13. Hány éle van egy teljes gráfnak?
+14. Definiálja a páros gráf fogalmát.
+15. Adja meg a "három ház, három kút" gráfot.
+16. Definiálja a rész\-gráf és a feszített rész\-gráf fogalmát.
+17. Definiálja rész\-gráf komplementerét.
+18. Definiálja az él\-halmaz illetve csúcs\-halmaz törlésével kapott
+    gráfot.
+19. Definiálja a séta és a séta hossza fogalmát.
+20. Definiálja a nyílt és a zárt sétát.
+21. Definiálja az út fogalmát.
+22. Mikor lesz egy nulla illetve egy hosszú séta út?
+23. Definiálja a vonal fogalmát.
+24. Definiálja a kör fogalmát.
+25. Van\--e egy illetve kettő hosszú kör?
+26. Hogyan kaphatunk sétából utat? Fogalmazza meg az állítást.
+27. Fogalmazza meg a séták körök segítségével való előállítására
+    vonatkozó állítást.
+28. Definiálja az össze\-függőség és a komponens fogalmát.
+29. Igaz\--e, hogy egy gráf minden éle valamely komponenshez tartozik?
+30. Mi a kapcsolat a komponensek és az össze\-függőség között?
+31. Definiálja a fa fogalmát.
+32. Fogalmazzon meg két szükséges és elégséges feltételt arra, hogy
+    egy egyszerű gráf fa legyen.
+33. Egy véges gráfban nincs kör, de van él. Mit állíthatunk
+    fok\-számokkal kapcsolatban?
+34. Egy egyszerű véges gráfnak $n$ csúcsa van.  Fogalmazzon meg két
+    olyan szükséges és elégséges feltételt amelyben szerepel az élek
+    száma, arra, hogy a gráf fa.
+35. Definiálja a feszítő\-fa fogalmát.
+36. Mit állíthatunk feszítő\-fa létezéséről?
+37. Mit állíthatunk véges összefüggő gráfban a körök számáról?
+38. Mikor mondjuk, hogy egy csúcs\-halmaz illetve él\-halmaz elvág két
+    csúcsot?
+39. Definiálja az elvágó él\-halmaz és a vágás fogalmát.
+40. Mit állíthatunk véges összefüggő gráfban a vágások számáról?
+41. Definiálja az erdő fogalmát. Mi az összefüggés a fákkal?
+42. Definiálja a feszítő erdő fogalmát. Hány éle van egy véges gráf
+    feszítő erdőjének?
+43. Definiálja az Euler\--vonal fogalmát.
+44. Fogalmazza meg a véges összefüggő gráfok vonalak egyesítéseként való
+    előállítására vonatkozó tételt.
+45. Definiálja a Hamilton\--út illetve Hamilton\--kör fogalmát.
+46. Definiálja a címkézett gráf fogalmát.
+47. Definiálja a súlyozott gráf fogalmát és egy véges rész\-halmaz
+    súlyát.
+48. Fogalmazza meg a Kruskal algoritmust és a rá vonatkozó tételt.
+49. Mit értünk mohó algoritmuson? Mondjon példát, amikor egy mohó
+    algoritmus nem ad optimális megoldást.
+50. Definiálja az irányított gráf, csúcsok, élek és illeszkedési leképezés
+    fogalmát.
+51. Definiálja irányított gráfban a kezdő\-pont és a végpont fogalmát.
+52. Hogyan kaphatunk irányított gráfból irányítatlan gráfot?  Miért
+    használhatjuk irányított gráfokra az irányítatlan gráfokra definiált
+    fogalmakat?
+53. Definiálja a gráf irányítása illetve megfordítása fogalmát.
+54. Definiálja a szigorúan párhuzamos élek fogalmát.
+55. Definiálja az egyszerű gráf és a véges gráf fogalmát.
+56. Definiálja csúcs be\-fokát és ki\-fokát.
+57. Mit mondhatunk irányított gráfokra a fok\-számok összegéről?
+58. Hogyan szemléltethetünk egy relációt irányított gráffal?
+59. Definiálja irányított gráfok izomorfiáját.
+60. Definiálja az irányított rész\-gráf és a feszített irányított
+    rész\-gráf fogalmát.
+61. Definiálja irányított rész\-gráf komplementerét.
+62. Definiálja az él\-halmaz illetve csúcs\-halmaz törlésével kapott
+    irányított gráfot.
+63. Definiálja a irányított séta és az irányított séta hossza fogalmát.
+64. Definiálja a nyílt és a zárt irányított sétát.
+65. Definiálja az irányított út fogalmát.
+66. Definiálja az irányított kör fogalmát.
+67. Definiálja az erős össze\-függőség és az erős komponens fogalmát.
+68. Igaz\--e, hogy egy irányított gráf minden éle valamely erős
+    komponenshez tartozik?
+69. Mi a kapcsolat az erős komponensek és az erős össze\-függőség
+    között?
+70. Definiálja az irányított fa és gyökere fogalmát.
+71. Definiálja a irányított fa szintjeit.
+72. Definiálja irányított fában a leveleket.
+* Csoportok
+73. [@73] Definiálja egy művelet esetén a homomorfizmus és a homomorf kép
+    fogalmát.
+74. Definiálja egy művelet esetén a monomorfizmus, az epimorfizmus és az
+    izomorfizmus fogalmát.
+75. Definiálja egy művelet esetén az endomorfizmus és az automorfizmus fogalmát.
+76. Mit mondhatunk homomorfizmusnál fél\-csoport, egység\-elem, inverz
+    és felcserélhető elemek esetén?
+77. Mi mondhatunk homomorfizmusnál csoport, kommutatív fél\-csoport és
+    Abel\--csoport esetén?
+78. Adjon meg szükséges és elégséges feltételeket arra, hogy egy
+    fél\-csoport csoport legyen.
+79. Fogalmazza meg csoportban az egyszerűsítési szabályt.
+80. Adjon példát invertálható műveletre, amellyel nem kapunk csoportot.
+81. Adja meg a szorzással mint művelettel tekintett egységnyi abszolút
+    érték komplex számok csoportjának három valódi rész\-csoportját.
+82. Mit értünk a Klein\--féle csoporton? Kommutatív\--e?
+83. Mit értünk diéder\-csoporton?
+84. Definiálja a rész\-csoport, triviális rész\-csoport és valódi
+    rész\-csoport fogalmát.
+85. Adjon meg szükséges és elégséges feltételeket arra, hogy egy csoport
+    egy rész\-halmaza rész\-csoport legyen.
+86. Mit mondhatunk rész\-csoportok metszetéről és egyesítéséről?
+87. Definiálja a generátum és a generátor\-rendszer fogalmát.
+88. Definiálja a ciklikus csoport és generátora fogalmát.
+89. Fogalmazza meg a generátumot leíró állítást.
+90. Mit mondhatunk ciklikus csoport homomorf képéről?
+91. Definiálja csoport és elem rendjét.
+92. Fogalmazza meg a ciklikus csoportok szerkezetét leíró tételt.
+93. Mi a kapcsolat elem és rész\-csoport rendje között?
+94. Mit mondhatunk ciklikus csoport rész\-csoportjairól?
+95. Mit mondhatunk véges ciklikus csoport rész\-csoportjai
+    generátorainak számáról?
+96. Definiálja a bal- és jobboldali mellék\-osztályokat.
+97. Mi a kapcsolat a bal- és a jobboldali mellék\-osztályok között?
+98. Definiálja rész\-csoport indexét.
+99. Fogalmazza meg Lagrange tételét.
+100. Mi a kapcsolat elem rendje és a csoport rendje között?
+101. Fogalmazzon meg olyan tételt, amely lehetővé teszi, hogy egy csoport
+     rendjéből a ciklikusságára következtessünk.
+102. Adjon meg szükséges és elégséges feltételt arra, hogy egy
+     csoportnak ne legyen nem triviális rész\-csoportja.
+103. Definiálja a normálosztó fogalmát.
+104. Adjon meg három olyan csoportot, amelyben minden rész\-csoport
+     normálosztó.
+105. Adjon meg szükséges és elégséges feltételeket arra, hogy egy
+     rész\-csoport normálosztó legyen.
+106. Mit mondhatunk normálosztók metszetéről és egyesítéséről?
+107. Fogalmazza meg kompatibilis osztályozások és a normálosztók
+     közötti kapcsolatot leíró tételt.
+108. Definiálja a faktor\-csoport fogalmát és fogalmazza meg a
+     definícióban felhasznált tételt.
+109. Adjon meg három példát faktor\-csoportra.
+110. Fogalmazza meg a homomorfizmus--tételt csoportokra.
+111. Definiálja csoportok direkt szorzatát.
+112. Fogalmazza meg a véges Abel--csoportok alap\-tételét.
+113. Fogalmazza meg Cayley tételét.
+114. Definiálja az $n$-ed fokú szimmetrikus csoportot.
+115. Két véges halmaznak ugyanannyi eleme van. Igaz--e, hogy
+     permutáció\-csoportjaik izomorfak?
+116. Írja le $S_n$ elemeinek hagyományos jelölését és adja meg ezzel a
+     jelöléssel a szorzást.
+117. Definiálja a páros és páratlan permutációkat.
+118. Ismertesse permutációk ciklus jelölését.
+119. Mi a transzpozíció?
+120. Fogalmazza meg a páros illetve páratlan permutációk és a
+     transzpozíciók száma közötti összefüggést leíró tételt.
+121. Fogalmazza meg a permutációk szorzatának párosságára vonatkozó
+     tételt.
+122. Definiálja az alternáló csoportokat.
+* Gyűrűk és testek
+123. [@123] Igaz--e hogy egy egység\-elemes integritási tartomány akkor és
+     csak akkor test, ha minden nem nulla eleme egység?
+124. Igaz--e hogy egy véges integritási tartomány test?
+125. Definiálja a Gauss--egészek gyűrűjét. Igaz--e, hogy két egység
+     van?
+126. Igaz--e, hogy egy adott halmazt egy testbe képez függvények
+     gyűrűje is test?
+127. Definiálja két művelet esetén a homomorfizmus és a homomorf kép
+     fogalmát.
+128. Definiálja két művelet esetén a monomorfizmus, az epimorfizmus és
+     az izomorfizmus fogalmát.
+129. Definiálja két művelet esetén az endomorfizmus és az
+     automorfizmus fogalmát.
+130. Mi mondhatunk homomorfizmusnál gyűrű képéről?
+131. Definiálja gyűrű karakterisztikáját. Milyen állítást használt?
+132. Fogalmazza meg a gyűrűk karakterisztikájára vonatkozó tételt.
+133. Definiálja a rész\-gyűrű fogalmát.
+134. Definiálja a jobb\-ideál, bal\-ideál és ideál fogalmát.
+135. Definiálja a triviális ideál és a valódi ideál fogalmát.
+136. Definiálja az egyszer gyűrű fogalmát.
+137. Definiálja a generált ideál és a fő\-ideál fogalmát.
+138. Mondjon négy példát $\mathbb{R}^\mathbb{R}$ rész\-gyűrűjére.
+139. Mondjon példát $\mathbb{Z}$-ben ideálra. Fő\-ideál--e?
+140. Definiálja gyűrűben a mellék\-osztályokat.
+141. Fogalmazza meg kompatibilis osztályozások és az ideálok közötti
+     kapcsolatot leíró tételt.
+142. Definiálja a faktor\-gyűrű fogalmát és fogalmazza meg a
+     definícióban felhasznált tételt.
+143. Fogalmazza meg a homomorfizmus--tételt gyűrűkre.
+144. Adjon példát Z faktor\-gyűrűjére.
+145. Fogalmazza meg egy kommutatív egység\-elemes gyűrűben a
+     fő\-ideálokat leíró állítást.
+146. Fogalmazza meg egy egység\-elemes integritási tartományban az
+     oszthatóság és a generált fő\-ideálok kapcsolatát leíró állítást.
+147. Definiálja a Gauss--gyűrű fogalmát.
+148. Gauss--gyűrűben hogyan olvashatók le a faktorizációból az osztók?
+149. Igaz--e hogy Gauss--gyűrűben létezik legnagyobb közös osztó és
+     legkisebb közös többszörös?
+150. Igaz--e hogy Gauss--gyűrűben minden irreducibilis elem prím?
+151. Definiálja az euklideszi gyűrű fogalmát.
+152. Fogalmazza meg az euklideszi gyűrűben az egységeket és az
+     asszociáltakat leíró tételt.
+153. Fogalmazza meg a bővített euklideszi algoritmust euklideszi
+     gyűrűben.
+154. Mi a kapcsolat euklideszi gyűrűben a prím\-elemek és az
+     irreducibilis elemek között?
+155. Fogalmazza meg euklideszi gyűrűben a faktorizációra vonatkozó
+     tételt.
+156. Definiálja a hányados\-test fogalmát. Milyen állítást használt?
+157. Hogyan ágyazható be egy integritási tartomány a
+     hányados\-testébe?
+* Polinomok
+158. [@158] Definiálja az egy\-határozatlanú polinom fogalmát.
+159. Definiálja egy\-határozatlanú polinomok összeadását és szorzását.
+160. Hogyan azonosíthatjuk a gyűrű elemeit bizonyos polinomokkal? Hogy
+     hívjuk ezeket a polinomokat?
+161. Definiálja polinom együtthatóit, fő\-együtthatóját és
+     fok\-számát.
+162. Definiálja a lineáris polinomokat.
+163. Definiálja a monom fogalmát egy határozatlan esetén.
+164. Definiálja a fő\-polinom fogalmát.
+165. Mit mondhatunk polinomok szorzatának fő\-együtthatójáról?
+166. Mit mondhatunk polinomok szorzatának fokáról?
+167. Definiálja polinom helyettesítési értékét és gyökét.
+168. Definiálja a polinomhoz tartozó polinom\-függvényt. Tartozhat--e
+     különböző polinomokhoz ugyanaz a polinom\-függvény?
+169. Fogalmazza meg a maradékos osztás tételét polinomokra.
+170. Fogalmazza meg a gyök\-tényező leválasztására vonatkozó állítást.
+171. Legfeljebb hány gyöke van egy polinomnak? Fogalmazza meg az
+     állítást.
+172. Milyen esetben kölcsönösen egyértelmű a megfeleltetés a polinomok
+     és a polinom\-függvények között? Fogalmazza meg az állítást.
+173. Milyen esetben alkotnak a polinomok euklideszi gyűrűt? Fogalmazza
+     meg az állítást.
+174. Ismertesse a Horner--elrendezést.
+175. Mondjon példát, amikor egy adott másodfokú polinomnak nulla, egy
+     illetve két gyöke van.
+176. Definiálja polinom algebrai deriváltját.
+177. Milyen négy tulajdonsággal jellemezhető a polinomhoz az algebrai
+     deriváltját rendel leképezés?
+178. Az $f, g$ polinomokra $g^n \mid f$.  Mit állíthatunk $f'$-ről?
+     Fogalmazza meg az állítást.
+179. Hogyan kaphatunk egy polinomból négyzet\-mentes polinomot?
+     Fogalmazza meg az állítást.
+180. Definiálja polinom többszörös gyökét.
+181. Mi a kapcsolat a polinom gyökei és a deriváltjának a gyökei
+     között?  Fogalmazza meg az állítást.
+182. Lehet--e egy polinom $n$-szeres gyöke a deriváltnak is legalább
+     $n$-szeres gyöke?
+183. Írja le az egységeket test feletti polinomok körében.
+184. Hogyan kaphatunk véges testeket?
+185. Fogalmazza meg a véges testek elem\-számát leíró tételt.
+186. Fogalmazza meg a véges test nem nulla elemei multiplikatív
+     csoportjának szerkezetét leíró tételt.
+187. Van--e minden prím\-hatványhoz olyan elem\-számú véges test?
+188. Írja le az irreducibilis polinomokat a $\mathbb{C}$ feletti
+     polinomok körében.
+189. Írja le az irreducibilis polinomokat az $\mathbb{R}$ feletti
+     polinomok körében.
+190. Mit tud a $\mathbb{Q}$ feletti irreducibilis polinomokról?
+191. Igaz--e, hogy $\mathbb{Z}[x]$ euklideszi gyűrű?
+192. Igaz--e, hogy $\mathbb{Z}[x]$ Gauss--gyűrű?
+193. Fogalmazza meg Gauss tételét egyértelmű faktorizációs
+     tartományokról.
+194. Ismertesse a Lagrange--interpoláiót.
+195. Ismertessen egy titok\-megosztási eljárást.
+196. Ismertesse a Kroneker--eljárást.
+197. Fogalmazza meg a véges testek alap\-tételét.
+198. Hogyan kaphatunk véges testeket? Írjon le olyan eljárást, amely
+     minden véges testet megad.
+199. Definiálja a racionális függvényeket.
+200. Fogalmazza meg a parciális törtekre bontás tételét $1/g$ alakú
+     racionális függvényre.
+201. Fogalmazza meg a parciális törtekre bontás tételét $f/g$ alakú
+     racionális függvényre két alakban.
+202. Fogalmazza meg a parciális törtekre bontás tételét $u/v^k$ alakú
+     racionális függvényre.
+203. Definiálja a több\-határozatlanú polinom fogalmát.
+204. Hogyan azonosíthatjuk a gyűrű elemeit bizonyos
+     több\-határozatlanú polinomokkal?
+205. Hogy hívjuk ezeket a polinomokat?
+206. Definiálja több\-határozatlanú polinom együtthatóit, tagjainak
+     multi\-fokát és fokát.
+207. Definiálja a több\-határozatlanú monom fogalmát.
+208. Definiálja több\-határozatlanú polinom fokát. Milyen
+     megállapodások mellett egyértelmű egy több\-határozatlanú polinom
+     felírása?
+209. Definiálja a több\-határozatlanú lineáris polinomokat.
+210. Hogyan írhatjuk fel két több\-határozatlanú polinom összegének,
+     illetve szorzatának az együtthatóit?
+211. Milyen esetben lesz a több\-határozatlanú polinomok gyűrűje
+     nullosztó\-mentes?
+212. Mit mondhatunk két több\-határozatlanú polinom szorzatának a
+     fokáról?
+213. Milyen esetben lesz a több\-határozatlanú polinomok gyűrűje
+     Gauss--gyűrű? Fogalmazza meg az állítást.
+* Kódolás
+214. [@214] Definiálja a gyakoriság és a relatív gyakoriság fogalmát.
+215. Definiálja egyedi üzenet információ\-tartalmát. Mi a bit?
+216. Definiálja az eloszlás és az entrópia fogalmát.
+217. Adja meg a pontos felső korlátot eloszlás entrópiájára. Mikor
+     teljesül egyenlőség?
+218. Mi a forrás\-kódolás? Mik a részei?
+219. Rajzolja fel az üzenet\-átvitel részletes sémáját.
+220. Ismertesse a betűnkénti kódolást.
+221. Definiálja a prefix, infix és szufix fogalmát.
+222. Ismertesse a kód és a kód\-fa kapcsolatát.
+223. Definiálja a prefix, egyenletes és vesszős kódot. Mi a
+     kapcsolatuk?
+224. Adjon példát nem dekódolható kódra.
+225. Adjon példát fejthető, de nem prefix kódra.
+226. Fogalmazza meg a McMillan--egyenltlenséget tartalmazó tételt.
+227. Definiálja az átlagos szó\-hosszúság és az optimális kód fogalmát.
+228. Van--e mindig optimális kód betűnkénti kódolásnál?
+229. Fogalmazza meg Shannon tételét zaj\-mentes csatornára.
+230. Ismertesse egy optimális kód kódfá jának tula jdonságait.
+231. Fogalmazza meg azt a három állítást, amelynek alapján optimális
+     kód konstruálható.
+232. Írja le, hogyan konstruálunk Huffman--kódot.
+233. Írja le, mit érhetünk el a kódolandó ábécé kiterjesztésével.
+234. Ismertesse a szótár\-kódok alapgondolatát.
+235. Ismertesse a paritás\-bites kódot.
+236. Definiálja a $t$-hiba jelző és pontosan $t$-hiba jelző kód
+     fogalmát.
+237. Definiálja kód távolságát és súlyát.
+238. Mi a kapcsolat a kód távolsága és hiba jelző képessége között?
+239. Ismertesse a minimális távolságú dekódolást.
+240. Definiálja a $t$-hiba javító és pontosan $t$-hiba javító kód
+     fogalmát.
+241. Mi a kapcsolat a kód távolsága és hiba javító képessége között?
+242. Definiálja a lineáris kód fogalmát és a kapcsolódó jelöléseket.
+243. Ismertesse a két\-dimenziós paritás\-ellenőrzést.
+244. Mi a Hamming--korlát?
+245. Mi a Singleton--korlát?
+246. Mi az MDS--kód és miért hívják így?
+247. Definiálja a lineáris kód fogalmát és a kapcsolódó jelöléseket.
+248. Definiálja a generátor\-mátrix, ellenőrző mátrix és s szindróma
+     fogalmát.
+249. Ismertesse a szindróma--dekódolást.
+250. Ismertesse a Fano--kódot.
+251. Ismertesse a polinom\-kódokat.
+252. Ismertesse a CRC-t.
+253. Adja meg Reed-Solomon-kód esetén a kódolást.
+254. Adjon meg Reed-Solomon-kód esetén egy ellenőrző mátrixot.
+255. Definiálja a hiba\-hely\-polinomot és a hiba\-érték\-polinomot.
+256. Hogyan történik a hiba\-hely\-polinom és a hiba\-érték\-polinom
+     ismertében a Reed-Solomon-kód dekódolása?
+257. Fogalmazza meg a tételt, amely lehetővé teszi a hiba\-hely\-polinom és
+     a hiba\-érték\-polinom meghatározását.
+258. Definiálja a számítási eljárás fogalmát.
+259. Definiálja a szimulálást.
+260. Definiálja a nagy ordót, a nagy omegát és thetát.
+261. Definiálja a Turing--gépet.
+262. Definiálja Turing--gép bemenetét és kimenetét.
+263. Fogalmazza meg a Turing--gép csökkentett jel\-készlettel történő
+     szimulálására vonatkozó tételt.
+264. Ismertesse szavak kétféle kódolását számmá és vissza.
+265. Fogalmazza meg a Turing--gép egy\-szalagos géppel történő
+     szimulálására vonatkozó tételt.
+266. Fogalmazza meg a szemét\-gyűjtésre vonatkozó tételt.
+267. Fogalmazza meg az univerzális Turing-gépekkel kapcsolatban tanult
+     tételt.
+268. Definiálja a fél\-szalagos Turing--gépet.
+269. Fogalmazza meg a fél\-szalagos Turing--gép Turing--géppel történő
+     szimulálására vonatkozó tételt.
+270. Fogalmazza meg a Turing--gép fél\-szalagos Turing--géppel történő
+     szimulálására vonatkozó tételt.
+271. Ismertesse a korlátozott gép\-modelleket.
+272. Fogalmazza meg a Turing--gép két\-verem\-táras géppel történő
+     szimulálására vonatkozó tételt.
+273. Fogalmazza meg a két\-verem\-táras gép Turing--géppel történő
+     szimulálására vonatkozó tételt.
+274. Ismertesse a RAM--gépet.
+275. Mi a logaritmikus költség?
+276. Fogalmazza meg a Turing--gép RAM--géppel történő szimulálására
+     vonatkozó tételt.
+277. Fogalmazza meg a RAM--gép Turing--géppel történő szimulálására
+     vonatkozó tételt.
+278. Ismertesse a tárolt programú gépet.

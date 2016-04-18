@@ -1,0 +1,37 @@
+# -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
+#+SETUPFILE: inc-zh.org
+#+TITLE:
+#+AUTHOR:
+#+DATE:
+#+LATEX_HEADER: \usepackage{multicol}
+* Diszkrét matematika II. - 2. ZH - 2015-05-12. Név/Csoport: 
+  #+LATEX: \begin{multicols}{2}
+  1. Keressük meg a következő polinom többszörös gyökeit:
+     $f=x^6-24x^4+32x^3+144x^2-384x+256 \in\C[x]$.
+  2. Legyen $f=\in\Z_5[x]$.  Végezzük el a következő műveletet
+     \(\Z_5[x]/(f)\)-ben: $x^{-4}\cdot (x^7+3x^4+4)$.
+  3. Keressük meg az $f=x^5 - 4x^4 - 6x^3 + 16x^2 + 29x + 12$ és a
+     $g=6x^5 -24x^3 +18x^2 +15x 40$ polinom racionális gyökeit.
+  4. Lagrange interpolációval határozzuk meg az a legfeljebb másodfokú
+     $f\in\Z_7[x]$ polinomot amelyre $\hat{f}(1)=3$, $\hat{f}(3)=1$,
+     és $\hat{f}(5)=6$.
+  5. Konstruáljunk ternáris Huffmann kódot a következő eloszláshoz:
+     $0.50, 0.15, 0.15, 0.10. 0.06, 0.04$.  Számoljuk ki az átlagos
+     szó\-hosszt, és az entrópiát.
+  6. Határozzuk meg a $G$ generátor mátrixhoz tartozó hiba\-ellenőrző
+     kódot.  Hány elemű a kód?  Mi a kód távolsága, hiba\-jelző és
+     hiba\-ellenőrző képessége?  Mi az $u=011$ üzenet kódja?  Mire
+     fogjuk (minimális távolságú dekódolással) dekódolni a $v=1101101$
+     bit\-sorozatot?
+     
+     \[ G=  \begin{pmatrix} 
+     0 & 0 & 1 \\
+     0 & 1 & 0 \\
+     1 & 1 & 1 \\
+     1 & 1 & 0 \\
+     0 & 1 & 1 \\
+     1 & 0 & 1 \\
+     1 & 0 & 0
+     \end{pmatrix}
+     \]
+  #+LATEX:  \end{multicols}\vfill

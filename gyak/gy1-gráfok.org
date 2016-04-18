@@ -1,0 +1,247 @@
+# -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
+#+SETUPFILE: inc-practice.org
+
+#+TITLE: Gráfok
+* Feladatok
+1. Rajzold le az összes, páronként nem izomorf 3, 4, illetve 5 csúcsú
+   egyszerű gráfot. Hány összefüggő, illetve reguláris van közöttük?
+2. Van--e olyan (legalább két\-pontú) véges egyszerű gráf, melyben
+   minden pont foka különböző?
+3. Van-e olyan társaság, ahol minden embernek különböző számú ismerőse
+   van?
+4. Van-e olyan 9-pontú gráf (tetszőleges, illetve egyszerű), melyben a
+   pontok foka rendre:
+   #+ATTR_LATEX: :environment inparaenum
+   1) 7,7,7,6,6,6,5,5,5; 
+   2) 6,6,5,4,4,3,2,2,1?
+5. Van--e olyan 8-pontú egyszerű gráf, melyben a fok\-számok
+   6,6,6,6,3,3,2,2?
+6. Hány olyan, páronként nem izomorf gráf van, amelyben
+   #+ATTR_LATEX: :environment inparaenum
+   1) két--két másod-, harmad- és negy\-edfokú csúcs van, más
+      fok\-szám nem fordul elő;
+   2) három--három másod-, harmad- és negy\-edfokú csúcs van, más
+      fok\-szám nem fordul elő.
+7. Mutasd meg, hogy tetszőleges véges gráfban a páratlan fokú pontok
+   száma páros!
+8. Rajzold le a következő gráfot! Egy kör kerületén vegyünk fel öt
+   pontot! A gráf csúcsai a pontok által meghatározott
+   $\binom{5}{2}=10$ húr lesz. Két csúcsot akkor kötünk össze a
+   gráfban, ha a nekik megfelelő húroknak nincs közös végpontja. Ezt
+   hívják Petersen--gráfnak.
+9. Milyen $C_n$ gráfok rész\-gráfjai a Petersen--gráfnak?
+10. Hány olyan 3,4, illetve 5 csúcsú egyszerű gráf van, amely izomorf
+    a komplementerével?
+11. Mutasd meg, hogy tetszőleges páratlan hosszúságú zárt séta
+    tartalmaz kört. Igaz--e ez páros hosszúságúra?
+12. Mutasd meg, hogy ha egy véges egyszerű gráf minden pontja legalább
+    másodfokú, akkor a gráfban van kör!  Általánosabban: Mutasd meg,
+    hogy ha egy véges egyszerű gráfban minden csúcs foga legalább $k$
+    (ahol $k\ge 2$), akkor van a gráfban legalább $k+1$ hosszú kör!
+13. Mutasd meg, hogy ha \(a\)-ból vezet út \(b\)-be, és \(b\)-ből
+    \(c\)-be, akkor \(a\)-ból is vezet \(c\)-be!
+14. Hat versenyző kör\-mérkőzést játszik. Bizonyítsd be, hogy bármely
+    időpontban van három olyan versenyző, akik már mind játszottak
+    egymással, vagy három olyan, hogy egyik sem játszott a másik
+    kettővel.
+15. Mutasd meg, hogy ha egy \(2n+1\)-pontú egyszerű gráf minden
+    pontjának foka legalább $n$, akkor a gráf összefüggő! Mi történik,
+    ha \(n - 1\)-fokú pontokat is megengedünk?
+16. Igaz--e, hogy vagy $G$, vagy a komplementere biztosan összefüggő?
+17. Jelöljük egy véges fa elsőfokú pontjainak számát \(f_1\)-gyel, a
+    kettőnél nagyobb fokúak számát pedig \(c\)-vel.  Mutasd meg, hogy
+    ha legalább két pontja van a gráfnak, akkor $f_1 \ge c + 2$.
+18. Igazold, hogy egy összefüggő véges gráfban bármely két leghosszabb
+    útnak van közös pontja!
+19. Mutasd meg, hogy egy véges fában az összes leghosszabb út egy
+    ponton megy át!
+20. Legfeljebb hány szeparáló él (olyan él, amit elhagyva több
+    komponensre esik szét a gráf) van egy $n \ge 1$ pontú gráfban?  És
+    legfeljebb hány szeparáló pont?  Mindkét esetben mutass olyan
+    példát, ahol pontosan ennyi van!
+21. Igazold, hogy véges gráfban a komponensek számának és az élek
+    számának összege nem kisebb, mint a csúcsok száma.
+22. Lerajzolhatóak--e a ceruza felemelése nélkül az alábbi gráfok úgy,
+    hogy minden élet pontosan egyszer húzunk be, illetve úgy hogy
+    megköveteljük, hogy a végén a kiinduló pontba érjünk vissza?
+    (Van--e Euler vonala/zárt vonala?)
+    #+BEGIN_LaTeX
+    \tikzset{node/.style={
+    every node/.style={draw,thick,circle,fill=lightgray,
+    inner sep=1pt,outer sep=1pt}}}
+    
+    \tikzset{inode/.style={
+    every node/.style={draw,circle,fill=gray,
+    inner sep=0,minimum size=1.5mm,}}}
+
+    \tikzset{edge/.style={
+    every edge/.style={draw},
+    every node/.style={auto,inner sep=1pt},
+    every loop/.style={every edge/.style,in=-45,out=45,looseness=5}}}
+
+    \tikzset{dedge/.style={
+    every edge/.style={draw,arrows={none-stealth}},
+    every node/.style={auto,inner sep=1pt},
+    every loop/.style={every edge/.style,in=-45,out=45,looseness=5}
+    }}
+
+    \tikzset{node distance=50pt}
+    
+    \begin{tikzpicture}[scale=0.5]
+    \draw[inode] (0,0) node{} 
+    -- ++(0,1)  node{} -- ++(-2,0) node{} -- ++(0,3)  node{} -- ++(4,0)  node{} 
+    -- ++(0,-3) node{} -- ++(-2,0) node{} -- ++(0,1)  node{} -- ++(-1,0) node{} 
+    -- ++(0,1)  node{} -- ++(2,0)  node{} -- ++(0,-1) node{} -- ++(-1,0) node{} 
+    -- ++(0,1)  node{} -- ++(0,1)  node{} -- ++(0,1)  node{};
+    \end{tikzpicture} 
+    \hspace{1cm}
+    \begin{tikzpicture}[scale=0.8,inode]
+    \draw (0,1) -- (1,0); \draw (2,0) -- (3,1);
+    \draw (0,2) -- (1,3); \draw (2,3) -- (3,2);
+    \def\n{3}
+    \foreach \x in {0,...,\n}{
+    \draw (0,\x) -- (\n,\x);
+    \draw (\x,0) -- (\x,\n);
+    }
+    \foreach \x in {0,...,\n}{
+    \foreach \y in {0,...,\n}{
+    \node at (\x,\y) {};
+    }
+    }
+    \end{tikzpicture}
+    #+END_LaTeX
+23. Van--e olyan összefüggő egyszerű gráf, amelyben van zárt
+    Euler--vonal, és páros sok csúcsa és páratlan sok éle van?
+24. Igazold, hogy minden összefüggő gráfban van olyan séta, amely a
+    gráf minden élét pontosan kétszer tartalmazza. Igaz--e, hogy ez
+    zárt sétára?
+25. Mutasd meg, hogy ha egy gráf minden pontjának foka 4, akkor élei
+    színezhetőek piros és kék színekkel úgy, hogy minden csúcshoz
+    két--két piros és kék él illeszkedjen!
+26. Van--e az alábbi gráfoknak Hamilton köre (útja)?
+
+    #+BEGIN_LaTeX
+    \begin{tikzpicture}[scale=0.65,inode]
+    \foreach \s in {0+45,90+45,180+45,270+45}{
+    \draw [-] 
+    (\s:1) -- ({\s+90}:1)
+    (\s:2) -- ({\s+90}:2)
+    (\s:3) -- ({\s+90}:3)
+    (\s:1) -- ({\s}:3);
+    \node at (\s:1) {};
+    \node at (\s:2) {};
+    \node at (\s:3) {};
+    \node at (\s+45:1.41) {};
+    }
+    \end{tikzpicture}
+    \hspace{1cm}
+    \begin{tikzpicture}[scale=0.9,inode]
+    \foreach \s in {0,72,144,216,288}{
+    \draw [-] (\s+90:2) -- ({\s+72+90}:2);
+    \draw [-] (\s+90:0) -- ({\s+90}:1);
+    \draw [-] (\s+90:2) -- ({\s+72+90}:1);
+    \draw [-] (\s+90:1) -- ({\s+72+90}:2);
+    }
+    \node at (0,0) {};
+    \foreach \s in {0,72,144,216,288}{
+    \node at ({\s+90}:1) {};
+    \node at ({\s+90}:2) {};
+    }
+    \end{tikzpicture}
+    
+    \begin{tikzpicture}[scale=0.65,inode]
+    \foreach \s in {0,72,144,216,288}{
+    \draw [-] 
+    ({\s+90}:1) -- ({\s+72+90}:1)
+    ({\s+90}:2) -- ({\s+72+90}:2)
+    ({\s+90}:3) -- ({\s+72+90}:3)
+    ({\s+90}:1) -- ({\s+90}:3);
+    }
+    \foreach \s in {0,72,144,216,288}{
+    \node at ({\s+90}:1) {};
+    \node at ({\s+90}:2) {};
+    \node at ({\s+36+90}:1.63) {};
+    \node at ({\s+90}:3) {};
+    }
+    \end{tikzpicture}
+    #+END_LaTeX
+27. Bejárható--e a \(9 \times 9\)-es sakktábla ló\-ugrással úgy, hogy
+    a kiindulási mezőre érjünk vissza?
+28. Mutasd meg, hogy egy dominó\-csomagból kirakható kör.
+29. Mutasd meg, hogy a Petersen--gráfban nincs Hamilton--kör, de
+    bárhogy töröljük egyetlen csúcsát, a maradékban már lesz.
+30. Mutasd meg, hogy ha egy gráfban van Hamilton-kör, de bárhogy
+    töröljük egyetlen élét, a maradék gráf összefüggő.
+31. Bizonyítsd be, hogy amennyiben egy gráfban található $k$ pont,
+    melyeket elhagyva a gráf több, mint $k$ komponensre esik szét,
+    akkor a gráfnak nincs Hamilton--köre!
+32. Bizonyítsd be, hogy ha egy véges összefüggő gráf $K$ köréből egy
+    élt eltörölve a gráf egy leghosszabb útját kapjuk, akkor $K$
+    Hamilton--köre a gráfnak!
+33. Mutasd meg, hogy minden \(n \ge 5\)-re igaz, hogy 
+    #+ATTR_LATEX: :environment inparaenum
+    1) létezik olyan $n$ csúcsú $G$ gráf, hogy $G$ is és $\overline{G}$ is
+       tartalmaz Hamilton--kört;
+    2) létezik olyan $n$ csúcsú $G$ gráf, hogy sem $G$ sem
+       $\overline{G}$ nem tartalmaz Hamilton--kört.
+34. Egy hotelba 100 fős társaság érkezik, akik közül kezdetben bármely
+    két ember jóban van egymással.  Esténként egyetlen nagy kerek
+    asztal köré ül le mindenki.  Sajnos egy vacsora alatt az egymás
+    mellé került emberek örökre összevesznek egymással.  A társaság
+    minden vacsora előtt úgy ül le, hogy a szomszédjaival jóban
+    legyen.  Ha ez lehetetlen, akkor minden résztvevő aznap este
+    hazamegy.  Mutasd meg, hogy legalább 25 éjszakát a hotelben tölt a
+    társaság!
+35. Bizonyítsd be, hogy bármely hurok\-mentes gráf irányítható úgy, hogy
+    a keletkező gráf nem tartalmaz irányított kört.
+36. Egy kör\-mérkőzéses tenisz\-bajnokságban nevezzük királynak azt a
+    versenyzőt, aki minden ellenfelét legyőzte. Kvázi\-királynak
+    nevezzük \(K\)-t, ha minden olyan játékos, aki őt legyőzte, kikapott
+    legalább egy olyan \(L\)-től, akit \(K\) megvert.
+    1) Mutassuk meg, hogy minden kör\-mérkőzéses bajnokságban van
+       kvázi\-király.
+    2) Mutassuk meg, hogy ha nincs király, akkor legalább két
+       kvázi\-király van.
+    3) Sőt, három is. Vajon négynek is kell lennie?
+    4) Mutassuk meg, hogy egy kör\-mérkőzéses tenisz\-verseny
+       játékosai sorba állíthatók úgy, hogy mindenki legyőzte a
+       közvetlenül mögötte állót.
+37. Tételezzük fel, hogy egy ügyes öltöztető\-gép fel tud úgy
+    öltöztetni valakit, hogy azokat a ruhadarabokat, melyekre nincs
+    sorrendi előírás, párhuzamosan is fel tudja adni az emberre (tehát
+    például zoknit és pulóvert igen, de nadrágot és cipőt nem).  Mennyi
+    idő alatt tud minimálisan felöltöztetni valakit, ha a következő
+    ruhadarabokat veszi fel (zárójelben az egyes ruhadarabok
+    felvételéhez szükséges idő másodpercekben)? Alsónadrág (20),
+    zokni(35), nadrág(30), cipő(50), karóra(20), ing(40), öv(35),
+    nyakkendő(300), zakó(10).
+38. Mennyi idő alatt épülhet fel leggyorsabban az a ház, melynek
+    alapozása 30, falazása 10, a tető\-fedés 20, a
+    vízvezeték\-szerelés 15, a nyílás\-zárók beszerelése 20, és a
+    burkolás 8, a festés 7 napot vesz igénybe?
+39. Melyik gráfot tudod lerajzolni úgy, hogy az élei ne metsszék
+    egymást: 
+    #+ATTR_LATEX: :environment inparaenum
+    1) egy kocka éleinek hálózata; 
+    2) teljes \(n\)-szög \(n = 3,4,5,\ldots\); 
+    3) $K_{3,3}$, vagy "három--ház--három--kút": páros gráf 3-3
+       ponttal (házak, kutak), minden ház összekötve minden kúttal;
+    4) a Petersen--gráf.
+40. Hány éle van egy \(n\)-pontú sík\-gráfnak, ha minden lapja (a
+    végtelen lap is) háromszög?
+41. Mutasd meg, hogy egy $n \ge 3$ pontú síkba\-rajzolható gráfnak
+    legfeljebb $3n - 6$ éle lehet!
+42. Bizonyítsd be, hogy ha egy $G$ gráf pontszáma legalább 11, akkor
+    vagy G, vagy a komplementere nem síkba\-rajzolható!
+43. Rajzolj egy olyan 8-pontú sík\-gráfot, aminek a komplementere is
+    sík\-gráf!
+44. Mutasd meg, hogy egy egyszerű síkba\-rajzolható gráfban nem lehet
+    minden pont foka legalább 6!
+45. Legfeljebb hány éle lehet egy síkba\-rajzolható gráfnak, ha minden
+    köre legalább $k$ hosszú?
+46. Egy nemzetközi konferencián öt különböző ország egy-egy
+    résztvevője ül.  Bizonyítsd be, hogy van közöttük legalább kettő,
+    akiknek az országa nem szomszédos!
+47. Mutasd meg, hogy egy síkba\-rajzolható gráf lapjai pontosan akkor
+    színezhetőek két színnel úgy, hogy a szomszédos lapok különböző
+    színűek legyenek, ha a gráfban van zárt Euler--vonal.

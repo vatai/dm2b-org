@@ -1,0 +1,44 @@
+# -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
+#+SETUPFILE: inc-zh.org
+#+TITLE:
+#+AUTHOR:
+#+DATE:
+
+* Diszkrét matematika II. - első ZH - 2015-03-25. Név: 
+  1. Van--e olyan 8 pontú egyszerű gráf, melyben a csúcsok foka rendre
+     #+ATTR_LATEX: :environment inparaenum
+     1) 7, 5, 5, 4, 4, 4, 4, 3;
+     2) 7, 7, 5, 5, 4, 4, 4, 3;
+     3) 7, 7, 7, 6, 4, 3, 2, 2;
+     4) 7, 3, 3, 4, 4, 4, 1, 0.
+  2. A 01110100 nyolc hosszú bit\-sorozat bitjeit ciklikusan
+     hármasával olvasva megkapjuk az összes 3 bites bináris számot.
+     Keress meg egy ilyen bit\-sorozatot amely az összes 4bites számot
+     tudja előállítani!  Szemléltesd a megoldásodat átfogalmazva a
+     problémát a gráfok nyelvére és általánosítsd az eljárást
+     \(n\)-bites számokra: fogalmazd meg mik a csúcsok, milyen gráfról
+     van szó (irányított vagy irányítatlan) és milyen sétát keresünk
+     benne (nyílt vagy zár, séta, vonal, út stb.)!
+  3. Bizonyítsd be, hogy egy gráf pontosan akkor páros ha nem
+     tartalmaz páratlan hosszú kört.
+  4. Legyen $n$ rögzített pozitív egész szám. Lássuk be, hogy az
+     \(n\)-edik egység\-gyökök halmaza a szorzásra nézve csoportot
+     alkot.
+  5. Legyen $n=12$ és jelölje $D_n$ a szabályos \(n\)-szög egybevágó
+     leképezéseit ahol a $\varepsilon$ az óramutató forgásának
+     ellentétes irányba ($\circlearrowleft$) $\frac{2\pi}{n}$
+     radiánnal való forgatást a $\tau$ pedig a függőleges szimmetria
+     tengelyre való tükrözést jelöli.
+
+     Legyen $g_1=\varepsilon^2 \circ \tau^3 \circ \varepsilon^5 \circ
+     \tau^8 \circ \varepsilon^{13} \circ \tau^{21}$ és $g_2=\tau \circ
+     \varepsilon^{47} \circ \tau$.
+     #+ATTR_LATEX: :environment inparaenum
+     1) Soroljuk fel $D_n$ elemeit!
+     2) Egyszerűsítsd $g_1$ és \(g_2\)-t.
+     3) Mi $g_1$, $g_2$ illetve $g_1\circ g_2$ rendje?
+     4) Soroljuk fel $\langle g_1\rangle$, $\langle g_2\rangle$ és
+        $\langle g_1 \circ g_2 \rangle$ elemeit.
+  6. Bizonyítsd be, hogy $(\Z_{14}^*,\cdot)$ és $(\Z_{18}^*,\cdot)$
+     azonos rendű ciklikus csoportok! Következik--e ebből, hogy
+     izomorfak!
