@@ -1,4 +1,5 @@
-#+TITLE: Diszkrét Matematika 2 Vizsgatematika
+# -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
+#+TITLE: Diszkrét Matematika 2 Vizsga\-tematika
 #+AUTHOR: Mikecz Márk László
 #+EMAIL: mikecz.mark.laszlo[at]gmail[dot]com
 #+LANGUAGE: hu
@@ -7,23 +8,23 @@
 ** DONE Definíciók [100%]
 *** DONE Irányítatlan Gráfok
     Irányítatlan gráf; izolált csúcs; illeszkedési reláció; két csúcs
-    szomszédos; üres gráf; hurokél; párhuzamos él (többszörös él);
-    véges gráf; végtelen gráf; fokszám; \(n\)-reguláris gráf;
-    reguláris gráf; gráfok izomorfiája; gráfok Descartes-szorzat;
-    páros gráf (kétrészes gráf); részgráf; szupergráf; telített
-    részgráf; részgráfnak a komplementere; egyszerű gráf
-    komplementere; séta; vonal; út; kör; összefüggőség; komponensek;
-    fa; erdő; feszítőfa; feszítőerdő; vágás; erdő; Euler-vonal;
-    Hamilton-út; Hamilton-kör; cimkézett és súlyozott gráf.
+    szomszédos; üres gráf; hurok\-él; párhuzamos él (többszörös él);
+    véges gráf; végtelen gráf; fok\-szám; \(n\)-reguláris gráf;
+    reguláris gráf; gráfok izomorfiája; gráfok Descartes--szorzat;
+    páros gráf (két\-részes gráf); rész\-gráf; szuper\-gráf; telített
+    rész\-gráf; rész\-gráfnak a komplementere; egyszerű gráf
+    komplementere; séta; vonal; út; kör; össze\-függőség; komponensek;
+    fa; erdő; feszítő\-fa; feszítő\-erdő; vágás; erdő; Euler--vonal;
+    Hamilton--út; Hamilton--kör; címkézett és súlyozott gráf.
 *** DONE Irányított Gráf
     Irányított gráf; irányított gráf megfordítása; szigorúan
-    párhuzamos él; csúcs kifoka; csúcs befoka; kifok összege, befok
-    összege és élek száma közötti összefüggés; irányított gráfok
-    izomorfiája; véges gráfok éllistás ábrázolása; irányított
-    részgráf; irányított séta; irányított vonal; irányított út;
-    irányított kör; erős összefüggőség; erős komponensek; irányított
-    fa; jólszínezés; kromatikus szám; gráfok mátrixai; síkban
-    rajzolható gráf; Euler formulax; topológikus izomorfia; Kuratowski
+    párhuzamos él; csúcs ki\-foka; csúcs be\-foka; ki\-fok összege,
+    be\-fok összege és élek száma közötti összefüggés; irányított
+    gráfok izomorfiája; véges gráfok él\-listás ábrázolása; irányított
+    rész\-gráf; irányított séta; irányított vonal; irányított út;
+    irányított kör; erős össze\-függőség; erős komponensek; irányított
+    fa; jól\-színezés; kromatikus szám; gráfok mátrixai; síkban
+    rajzolható gráf; Euler formula; topologikus izomorfia; Kuratowski
     tétel.
 ** DONE Tétel [100%]
 *** DONE Irányítatlan Gráfok
