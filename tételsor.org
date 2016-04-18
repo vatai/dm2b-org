@@ -6,22 +6,25 @@
 * Gráfok [100%]
 ** DONE Definíciók [100%]
 *** DONE Irányítatlan Gráfok
-    Irányítatlan gráf; Izolált csúcs; Illeszkedési reláció; Két csúcs
-    szomszédos; Üres gráf; Hurokél; Párhuzamos él(Többszörös él);
-    Véges gráf; Végtelen gráf; Fokszám; Reguláris gráf; Gráf fokszám
-    és él összefüggés; Két gráf izomorf; Descartes-szorzat; Páros
-    gráf(Kétrészes gráf); Részgráf; Szupergráf; Telített részgráf;
-    Komplementer gráf; Séta; Vonal; Út; Kör; Összefüggő; Fa; Erdő;
-    Feszítőfa; Feszítőerdő; Vágás; Erdő; Euler-vonal; Hamilton-út;
-    Hamilton-kör; Cimkézett és súlyozott gráf
+    Irányítatlan gráf; izolált csúcs; illeszkedési reláció; két csúcs
+    szomszédos; üres gráf; hurokél; párhuzamos él (többszörös él);
+    véges gráf; végtelen gráf; fokszám; \(n\)-reguláris gráf;
+    reguláris gráf; gráfok izomorfiája; gráfok Descartes-szorzat;
+    páros gráf (kétrészes gráf); részgráf; szupergráf; telített
+    részgráf; részgráfnak a komplementere; egyszerű gráf
+    komplementere; séta; vonal; út; kör; összefüggőség; komponensek;
+    fa; erdő; feszítőfa; feszítőerdő; vágás; erdő; Euler-vonal;
+    Hamilton-út; Hamilton-kör; cimkézett és súlyozott gráf.
 *** DONE Irányított Gráf
-    Irányított gráf; Irányított gráf megfordítása; Szigorúan
-    párhuzamos él; Csúcs kifoka; Csúcs befoka; Kifok, befok, él
-    összefüggés; Irányított gráfok izomorfiája; Véges gráfok éllistás
-    ábrázolása; Irányított részgráf; Irányított séta; Irányított
-    vonal; Irányított út; Irányított kör; Erős összefüggőség;
-    Irányított fa; Kromatikus szám; Gráfok mátrixai; Síkban rajzolható
-    gráf; Jól színezés;
+    Irányított gráf; irányított gráf megfordítása; szigorúan
+    párhuzamos él; csúcs kifoka; csúcs befoka; kifok összege, befok
+    összege és élek száma közötti összefüggés; irányított gráfok
+    izomorfiája; véges gráfok éllistás ábrázolása; irányított
+    részgráf; irányított séta; irányított vonal; irányított út;
+    irányított kör; erős összefüggőség; erős komponensek; irányított
+    fa; jólszínezés; kromatikus szám; gráfok mátrixai; síkban
+    rajzolható gráf; Euler formulax; topológikus izomorfia; Kuratowski
+    tétel.
 ** DONE Tétel [100%]
 *** DONE Irányítatlan Gráfok
 **** Dirac Tétel
@@ -35,7 +38,10 @@
 *** DONE Irányított Gráfok
     + Dijkstra módszer (7.2.22)
 ** DONE Tétel Bizonyítás [100%]
-*** DONE Irányítatlan Gráfok [100%]
+*** DONE Irányítatlan Gráfok [90%]
+**** TODO Állítás
+     Gráf fokszámának összege és élek számának összefüggését jellemző
+     állítás.
 **** DONE 7.1.20 Állítás
      Az előző pont jelöléseivel, bármely G gráfban a különböző v és v'
      csúcsokat összekötő sétából alkalmasan törölve ei,vi párokat, a
