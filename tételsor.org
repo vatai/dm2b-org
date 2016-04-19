@@ -44,8 +44,8 @@
 **** Összefüggő véges gráfban Zárt Euler--vonal létezéséről, illetve él\-diszjunkt vonalakra való felbontására vonatkozó tétel (7.1.45)
 **** Kruskal algoritmus
 * Algebra
-** Definíciók [25%]
-*** DONE Csoportok
+** Definíciók
+*** Csoportok
     Grupoid; fél\-csoport; (jobboldali, baloldali) egység elem;
     monoid; (jobboldali, baloldali) inverz; csoport; Abel--csoport;
     homomorfizmus; monomorfizmus; epimorfizmus; izomorfizmus;
@@ -55,12 +55,12 @@
     normálosztó; faktor\-csoport; homomorfizmus magja; direkt szorzat.
 *** TODO Gyűrűk
 ** Tételek
-*** TODO Bizonyítás nélkül
+*** Bizonyítás nélkül
 **** Ciklikus csoport rész\-csoportjait és generátorait leíró tétel (8.1.41)
 **** Prímszám\-rendű ciklikus csoportokra vonatkozó tétel (8.1.55)
 **** Véges Abel--csoportok alap\-tétele (8.1.93)
 **** Cayley tétel (8.1.102)
-*** TODO Bizonyítással
+*** Bizonyítással
 **** Asszociativitás, egység\-elem, inverz és kommutatív elemek homomorf képeiről szóló tétel és az ide tartozó következmény (8.1.8 és 8.1.9)
 **** Csoport ekvivalens definícióiról szóló tétel és az egyszerűsítési szabály (8.1.13 8.1.14)
 **** Rész\-csoport ekvivalens definícióiról szóló állítás (8.1.27 és 8.1.28)
