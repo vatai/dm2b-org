@@ -53,7 +53,15 @@
     Klein csoport; generátum; ciklikus csoport; diéder csoport;
     csoport rendje; elem rendje; jobb és baloldali mellék\-osztályok;
     normálosztó; faktor\-csoport; homomorfizmus magja; direkt szorzat.
-*** TODO Gyűrűk
+*** Gyűrűk és testek
+    Gyűrű; null\-osztó\-mentes gyűrű; kommutatív gyűrű; integritási
+    tartomány; egység\-elemes integritási tartomány; ferde\-testek;
+    testek; $példa gyűrűre (\mathbb{Z}[\alhpa])$; gyűrű
+    homomorfizmusok; gyűrű karakterisztikája;
+    Frobenius--endomorfizmus; rész\-gyűrű; ideál; mellék\-osztályok;
+    faktor\-gyűrű; példa faktor\-gyűrűre; homomorfizmus magja; gyűrűk
+    direkt szorzata; Gauss--gyűrűk; példa gyűrűre ami nem
+    Gauss--gyűrű; Euklideszi gyűrűk; hányados\-test.
 ** Tételek
 *** Bizonyítás nélkül
 **** Ciklikus csoport rész\-csoportjait és generátorait leíró tétel (8.1.41)
@@ -73,30 +81,43 @@
 **** Normálosztók metszetére vonatkozó tétel (8.1.72)
 **** Normálosztó szerinti mellék\-osztályok és a művelet kapcsolatára vonatkozó tétel és az ide tartozó következmény (8.1.80 és 8.1.81)
 **** Homomorfizmus\-tétel (8.1.85)
-** Gyűrűk és Testek [%]
-*** TODO Definíciók
-    Gyűrű, Nullosztómentes gyűrű, Kommutatív gyűrű, Integritási
-    tartomány, Egységelemes integritási tartomány, Gauss-gyűrűk,
-    Ferdetestek, Euklideszi gyűrűk, Testek, Homomorfizmusok, Gyűrű
-    karakterisztikája, Részgyűrű, Ideál, Mellékosztályok,
-*** TODO Tétel
-**** 8.2.49 Következmény
-*** TODO Tétel Bizonyítás
-**** 8.2.18 Tétel
-     Gyűrű homomorf képe gyűrű.
-**** 8.2.19 Tétel 
-     Egy R nullosztómentes gyűrűben a nem nulla elemek additív rendje
-     megegyezik, és vagy végtelen, vagy prímszám.
-**** 8.2.48 Tétel
-     Egy R gyűrű egy I ideál szerinti mellékosztályai a gyűrűnek
-     mindkét művelettel kompatibilis osztályzását alkotják.  Minden,
-     mindkét művelettel kompatibilis osztályzás esetén a nulla
-     osztálya ideál, és az osztályzás ezen ideál szerinti
-     mellékosztályokból áll.
-** Polinomok [0%]
+**** Gyűrű homomorf képére vonatkozó tétel (8.2.18)
+**** Nullosztó\-mentes gyűrűben a nem nulla elemek additív rendjére vonatkozó tétel (8.2.19)
+**** Gyűrűben ideál szerinti mellék\-osztályokra és a műveletre vonatkozó tétel és az ide tartozó következmény (8.2.48 és 8.2.49)
+**** Gyűrű homomorfizmus--tétel (8.2.54)
+**** Kommutatív egység\-elemes gyűrűben a fő\-ideálokra vonatkozó tétel és a hozzá tartozó következmény (8.2.65 és 8.2.66)
+**** Gauss gyűrűben a prím és irreducibilis elemek kapcsolata (8.2.67 vége)
+**** Euklideszi gyűrű elemei és a $\varphi$ függvény kapcsolatára vonatkozó állítás (8.2.70) 
+**** Bővített Euklideszi algoritmus Euklideszi gyűrűben (8.2.75)
+**** Euklideszi gyűrűben a prímek és felbonthatatlan kapcsolatára vonatkozó tétel (8.2.76)
+**** Euklideszi gyűrű és Gauss--gyűrű kapcsolatára vonatkozó tétel (8.2.77)
+* Polinomok [0%]
 ** TODO Definíciók
-** TODO Tétel
-** TODO Tétel Bizonyítás
+   Formális hatvány sorok gyűrűje és a rajta értelmezett műveletek
+   $(R[\![x]\!], +, \cdot)$; $(R[x],+,\cdot)$ egy\-határozatlanú
+   polinom gyűrű és rajta értelmezett műveletek; konstans polinom;
+   együttható; konstans tag; fő\-együttható; fő\-tag; polinom foka;
+   null\-polinom; lineáris polinom; monom; fő\-polinom
+   (normál\-polinom); polinom\-függvény; pszeudo\-osztás;
+   Horner--elrendezés; algebrai derivált; többszörös gyökök; 
+** Tétel
+*** Bizonyítás nélkül
+**** $R$ elemei megfeleltetése \(R[x]\)-ben
+**** $R$ tulajdonságai és $R[x]$ tulajdonságai kapcsolatára vonatkozó állítás
+**** Wilson tétel
+**** Algebrai derivált tulajdonságai 
+**** Irreducibilis polinomok és test\-bővítés (8.3.40)
+**** Véges testek elem\-száma és a megjegyzés (8.3.54 és 8.3.55)
+**** Véges testek multiplikatív csoportjára vonatkozó tétel (8.3.58)
+*** Bizonyítással
+**** Maradékos osztás tétele polinomokra (8.3.8)
+**** Gyök\-tényező leválasztása (8.3.9)
+**** Polinom gyökére és fok\-számára vonatkozó következmény (8.3.10)
+**** Két polinom megegyezésére vonatkozó következmény (8.3.11)
+**** Polinom és polinom\-függvény kapcsolatát leíró következmény (8.3.12)
+**** Test feletti polinom gyűrűre vonatkozó következmény (8.3.13)
+**** Egy polinom osztói és deriváltját leíró tétel és az ide tartozó következmény (8.3.31 és 8.3.32)
+**** Többszörös gyökökre és a deriváltra vonatkozó tétel és megjegyzés (8.3.34 és 8.3.35)
 * Kódolás [0%]
 ** TODO Definíciók
 ** TODO Tétel
