@@ -27,7 +27,7 @@
     fa; jól\-színezés; kromatikus szám; gráfok mátrixai; síkban
     rajzolható gráf; Euler formula; topologikus izomorfia; Kuratowski
     tétel.
-** Tétel 
+** Tételek
 *** Bizonyítás nélkül
     Dirac és Ore tétel
      (https://hu.wikipedia.org/wiki/Hamilton-k%C3%B6r); Dijkstra
@@ -35,70 +35,44 @@
 *** Bizonyítással
 **** Állíŧás arról hogyan lehet sétából utat kapni (7.1.20)
 **** Állítás a zárt vonalak jellemzéséről körökkel (7.1.21)
-**** Fa ekvivalens definícióiról szóló tétel (1+3 állítás ekvivalenciája) (7.1.29)
+**** Fa ekvivalens definícióira vonatkozó tétel (1+3 állítás ekvivalenciája) (7.1.29)
 **** Kör\-mentes fák és első\-fokú csúcsok kapcsolatát leíró állítás (7.1.30)
 **** Fákban, a csúcsok és élek számának összefüggését leíró tétel (7.1.31)
-**** Összefüggő gráf feszítő\-fáinak létezéséről szóló állítás (7.1.37)
-**** Összefüggő gráfban, körök számáról szóló tétel (7.1.38)
-**** Összefüggő gráfban, vágások számáról szóló tétel (7.1.41)
-**** Összefüggő véges gráfban Zárt Euler--vonal létezéséről, illetve él\-diszjunkt vonalakra való felbontásáról szóló tétel (7.1.45)
+**** Összefüggő gráf feszítő\-fáinak létezésére vonatkozó állítás (7.1.37)
+**** Összefüggő gráfban, körök számára vonatkozó tétel (7.1.38)
+**** Összefüggő gráfban, vágások számára vonatkozó tétel (7.1.41)
+**** Összefüggő véges gráfban Zárt Euler--vonal létezéséről, illetve él\-diszjunkt vonalakra való felbontására vonatkozó tétel (7.1.45)
 **** Kruskal algoritmus
 * Algebra
-** Csoportok [33%]
-*** DONE Definíciók 
-    Grupoid; fél\-csoport; monoid; csoport; Abel--csoport;
+** Definíciók [25%]
+*** DONE Csoportok
+    Grupoid; fél\-csoport; (jobboldali, baloldali) egység elem;
+    monoid; (jobboldali, baloldali) inverz; csoport; Abel--csoport;
     homomorfizmus; monomorfizmus; epimorfizmus; izomorfizmus;
     endomorfizmus; automorfizmus; rész\-fél\-csoport; rész\-csoport;
-    generátum; csoport rendje; elem rendje; mellék\-osztályok;
+    Klein csoport; generátum; ciklikus csoport; diéder csoport;
+    csoport rendje; elem rendje; jobb és baloldali mellék\-osztályok;
     normálosztó; faktor\-csoport; homomorfizmus magja; direkt szorzat.
-*** TODO Tétel
-**** 8.1.9 Következmény
-     Csoport homomorf képe is csoport. Kommutatív félcsoport homomorf
-     képe is kommutatív félcsoport. Abel-csoport homomorf képe is
-     Abel-csoport.
-     + 8.1.14 Következmény: Egyszerűsítési szabály
-     + 8.1.34 Következmény
-     + 8.1.53 Következmény
-     + 8.1.54 Következmény
-     + 8.1.55 Következmény
-     + 8.1.72 Következmény
-     + 8.1.81 Következmény
-     + 8.1.93 Tétel (Véges Ábel-csoportok alaptétele)
-     + 8.1.102 Cayley Tétele
-     + 8.1.104 Tétel
-     + 8.1.105 Következmény
-*** TODO Tétel Bizonyítás
-**** 8.1.8 Tétel
-     A homomorfizmus definíciójánál használt jelölésekkel:
-     + (1) ha G félcsoport, akkor a homomorf képe is félcsoport;
-     + (2) ha G-ben e jobb oldali egységelem, bal oldali egységelem,
-       illetve egységelem, akkor a homomorf képében e képe jobb oldali
-       egységelem, bal oldali egységelem, illetve egységelem;
-     + (3) ha G-ben e egységelem, és g-nek g* jobb oldali inverze, bal
-       oldali inverze, illetve inverze, akkor a homomorf képében g*
-       képe a g képének jobb oldali inverze, bal oldali inverze,
-       illetve inverze;
-     + (4) ha G-ben g és h felcserélhetőek, akkor a homomorf képben g
-       és h képei felcserélhetőek;
-**** 8.1.13 Tétel
-     Ha G egy félcsoport, akkor az alábbi feltételek ekvivalensek:
-     + (1) G csoport;
-     + (2) G $\neq$ 0 és minden a,b eleme G esetén egy és csak egy
-       olyan x eleme G, illyetve y eleme G létezik, amelyre ax = b,
-       illetve ya = b (elvégezhető az osztás);
-     + (3) G $\neq$ 0 és minden a,b eleme G esetén létezik olyan x
-       eleme G, illetve y eleme G, amelyre ax = b (a művelet
-       invertálható).
-     + 8.1.27 Állítás
-     + 8.1.29 Következmény
-     + 8.1.33 Állítás
-     + 8.1.38 Tétel
-     + 8.1.40 Tétel
-     + 8.1.41 Tétel
-     + 8.1.52 Tétel (Lagrange tétel)
-     + 8.1.71 Tétel
-     + 8.1.80 Tétel
-     + 8.1.85 Tétel (Homomorfizmustétel)
+*** TODO Gyűrűk
+** Tételek
+*** TODO Bizonyítás nélkül
+**** Ciklikus csoport rész\-csoportjait és generátorait leíró tétel (8.1.41)
+**** Prímszám\-rendű ciklikus csoportokra vonatkozó tétel (8.1.55)
+**** Véges Abel--csoportok alap\-tétele (8.1.93)
+**** Cayley tétel (8.1.102)
+*** TODO Bizonyítással
+**** Asszociativitás, egység\-elem, inverz és kommutatív elemek homomorf képeiről szóló tétel és az ide tartozó következmény (8.1.8 és 8.1.9)
+**** Csoport ekvivalens definícióiról szóló tétel és az egyszerűsítési szabály (8.1.13 8.1.14)
+**** Rész\-csoport ekvivalens definícióiról szóló állítás (8.1.27 és 8.1.28)
+**** Rész\-csoportok metszetére vonatkozó következmény (8.1.29)
+**** Generátumot jellemző állítás és a ciklikus csoportokra vonatkozó következmény (8.1.33 8.1.34)
+**** Ciklikus csoportokat leíró tétel (8.1.38)
+**** Ciklikus csoportok rész\-csoportjára vonatkozó tétel (8.1.40)
+**** Lagrange tétel és következményei (8.1.52, 8.1.53 és 8.1.54)
+**** Normálosztó ekvivalens definícióira vonatkozó tétel (8.1.71)
+**** Normálosztók metszetére vonatkozó tétel (8.1.72)
+**** Normálosztó szerinti mellék\-osztályok és a művelet kapcsolatára vonatkozó tétel és az ide tartozó következmény (8.1.80 és 8.1.81)
+**** Homomorfizmus\-tétel (8.1.85)
 ** Gyűrűk és Testek [%]
 *** TODO Definíciók
     Gyűrű, Nullosztómentes gyűrű, Kommutatív gyűrű, Integritási
