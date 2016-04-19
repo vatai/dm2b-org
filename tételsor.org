@@ -16,7 +16,7 @@
     rész\-gráfnak a komplementere; egyszerű gráf komplementere; séta;
     vonal; út; kör; össze\-függőség; komponensek; fa; erdő;
     feszítő\-fa; feszítő\-erdő; vágás; erdő; Euler--vonal;
-    Hamilton--út; Hamilton--kör; címkézett és súlyozott gráf.
+    Ha\-mil\-ton--út; Hamilton--kör; címkézett és súlyozott gráf.
 *** Irányított Gráf
     Irányított gráf; irányított gráf megfordítása; szigorúan
     párhuzamos él; csúcs ki\-foka; csúcs be\-foka; ki\-fok összege,
@@ -35,7 +35,7 @@
 *** Bizonyítással
 **** Állíŧás arról hogyan lehet sétából utat kapni (7.1.20)
 **** Állítás a zárt vonalak jellemzéséről körökkel (7.1.21)
-**** Fa ekvivalens definícióira vonatkozó tétel (1+3 állítás ekvivalenciája) (7.1.29)
+**** Fa ekvivalens definícióira vonatkozó tétel (7.1.29)
 **** Kör\-mentes fák és első\-fokú csúcsok kapcsolatát leíró állítás (7.1.30)
 **** Fákban, a csúcsok és élek számának összefüggését leíró tétel (7.1.31)
 **** Összefüggő gráf feszítő\-fáinak létezésére vonatkozó állítás (7.1.37)
