@@ -1,0 +1,27 @@
+# -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
+#+SETUPFILE: inc-vizsga.org
+Diszkrét matematika 2 (B) vizsga, 2015-05-28, Név (NK): \hrulefill
+1. Definiálja a hurok\-él és a párhuzamos élek fogalmát.
+2. Definiálja a feszítő\-fa fogalmát.
+3. Fogalmazza meg az Euler formulát.
+4. Definiálja egy művelet esetén a homomorfizmus és a homomorf kép
+   fogalmát.
+5. Adja meg a szorzással mint művelettel tekintett egységnyi abszolút
+   érték komplex számok csoportjának három valódi rész\-csoportját.
+6. Igaz--e hogy Gauss--gyűrűben minden irreducibilis elem prím?
+7. Fogalmazza meg a maradékos osztás tételét polinomokra.
+8. Milyen négy tulajdonsággal jellemezhető a polinomhoz az algebrai
+   deriváltját rendel leképezés?
+9. Fogalmazza meg a véges testek elem\-számát leíró tételt.
+10. Definiálja az entrópia fogalmát.
+11. Írja le, hogyan konstruálunk Huffman--kódot.
+12. Definiálja a lineáris kód fogalmát és a kapcsolódó jelöléseket.
+#+LATEX: \newpage
+#+ATTR_LATEX: :environment compactenum
+1. Hogyan kaphatunk sétából utat? Fogalmazza meg és bizonyítsa be az
+   állítást.
+2. Mi a kapcsolat a polinom gyökei és a deriváltjának a gyökei között?
+   Fogalmazza meg és bizonyítsa be az állítást.
+3. Bizonyítsa be a Hamming\--korlát néven ismert egyenlőtlenséget.
+
+
