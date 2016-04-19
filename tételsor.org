@@ -4,9 +4,9 @@
 #+EMAIL: mikecz.mark.laszlo[at]gmail[dot]com
 #+LANGUAGE: hu
 
-* Gráfok [100%]
-** DONE Definíciók [100%]
-*** DONE Irányítatlan Gráfok
+* Gráfok
+** Definíciók
+*** Irányítatlan Gráfok
     Irányítatlan gráf; izolált csúcs; illeszkedési reláció; két csúcs
     szomszédos; üres gráf; hurok\-él; párhuzamos él (többszörös él);
     véges gráf; végtelen gráf; fok\-szám; fok\-számok összege és élek
@@ -17,7 +17,7 @@
     vonal; út; kör; össze\-függőség; komponensek; fa; erdő;
     feszítő\-fa; feszítő\-erdő; vágás; erdő; Euler--vonal;
     Hamilton--út; Hamilton--kör; címkézett és súlyozott gráf.
-*** DONE Irányított Gráf
+*** Irányított Gráf
     Irányított gráf; irányított gráf megfordítása; szigorúan
     párhuzamos él; csúcs ki\-foka; csúcs be\-foka; ki\-fok összege,
     be\-fok összege és élek száma közötti összefüggés; irányított
@@ -27,7 +27,7 @@
     fa; jól\-színezés; kromatikus szám; gráfok mátrixai; síkban
     rajzolható gráf; Euler formula; topologikus izomorfia; Kuratowski
     tétel.
-** DONE Tétel 
+** Tétel 
 *** Bizonyítás nélkül
     Dirac és Ore tétel
      (https://hu.wikipedia.org/wiki/Hamilton-k%C3%B6r); Dijkstra
@@ -46,11 +46,11 @@
 * Algebra
 ** Csoportok [33%]
 *** DONE Definíciók 
-    Grupoid; Félcsoport; Monoid; Csopot; Ábel-csoport; Homomorfizmus;
-    Monomirfizmus; Epimorfizmus; Izomorfizmus; Endomorfizmus;
-    Automorfizmus; Reprezentáció; Részfélcsoport; Részcsoport;
-    Generátum; Rend; Mellékosztályok; Normálosztó; Faktorcsoport;
-    Homomorfizmus magja; Direkt szorzat; Permutációcsoportok;
+    Grupoid; fél\-csoport; monoid; csoport; Abel--csoport;
+    homomorfizmus; monomorfizmus; epimorfizmus; izomorfizmus;
+    endomorfizmus; automorfizmus; rész\-fél\-csoport; rész\-csoport;
+    generátum; csoport rendje; elem rendje; mellék\-osztályok;
+    normálosztó; faktor\-csoport; homomorfizmus magja; direkt szorzat.
 *** TODO Tétel
 **** 8.1.9 Következmény
      Csoport homomorf képe is csoport. Kommutatív félcsoport homomorf
