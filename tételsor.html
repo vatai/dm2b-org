@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hu" xml:lang="hu">
+<head>
+<!-- 2016-04-20 sze 14:30 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title>Diszkrét Matematika 2 Vizsga&#x00ad;tematika</title>
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Mikecz Márk László" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Diszkrét Matematika 2 Vizsga&#x00ad;tematika</h1>
+<div id="table-of-contents">
+<h2>Tartalomjegyz&eacute;k</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgheadline17">1. Gráfok</a>
+<ul>
+<li><a href="#orgheadline3">1.1. Definíciók</a>
+<ul>
+<li><a href="#orgheadline1">1.1.1. Irányítatlan Gráfok</a></li>
+<li><a href="#orgheadline2">1.1.2. Irányított Gráf</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline16">1.2. Tételek</a>
+<ul>
+<li><a href="#orgheadline4">1.2.1. Bizonyítás nélkül</a></li>
+<li><a href="#orgheadline15">1.2.2. Bizonyítással</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgheadline50">2. Algebra</a>
+<ul>
+<li><a href="#orgheadline20">2.1. Definíciók</a>
+<ul>
+<li><a href="#orgheadline18">2.1.1. Csoportok</a></li>
+<li><a href="#orgheadline19">2.1.2. Gyűrűk és testek</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline49">2.2. Tételek</a>
+<ul>
+<li><a href="#orgheadline25">2.2.1. Bizonyítás nélkül</a></li>
+<li><a href="#orgheadline48">2.2.2. Bizonyítással</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgheadline70">3. Polinomok <code>[0%]</code></a>
+<ul>
+<li><a href="#orgheadline51">3.1. <span class="todo TODO">TODO</span> Definíciók</a></li>
+<li><a href="#orgheadline69">3.2. Tétel</a>
+<ul>
+<li><a href="#orgheadline59">3.2.1. Bizonyítás nélkül</a></li>
+<li><a href="#orgheadline68">3.2.2. Bizonyítással</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgheadline74">4. Kódolás <code>[0%]</code></a>
+<ul>
+<li><a href="#orgheadline71">4.1. <span class="todo TODO">TODO</span> Definíciók</a></li>
+<li><a href="#orgheadline72">4.2. <span class="todo TODO">TODO</span> Tétel</a></li>
+<li><a href="#orgheadline73">4.3. <span class="todo TODO">TODO</span> Tétel Bizonyítás</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline17" class="outline-2">
+<h2 id="orgheadline17"><span class="section-number-2">1</span> Gráfok</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-orgheadline3" class="outline-3">
+<h3 id="orgheadline3"><span class="section-number-3">1.1</span> Definíciók</h3>
+<div class="outline-text-3" id="text-1-1">
+</div><div id="outline-container-orgheadline1" class="outline-4">
+<h4 id="orgheadline1"><span class="section-number-4">1.1.1</span> Irányítatlan Gráfok</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+Irányítatlan gráf; izolált csúcs; illeszkedési reláció; két csúcs
+szomszédos; üres gráf; hurok&#x00ad;él; párhuzamos él (többszörös él);
+véges gráf; végtelen gráf; fok&#x00ad;szám; fok&#x00ad;számok összege és élek
+száma közötti összefüggés; \(n\)-reguláris gráf; reguláris gráf;
+gráfok izomorfiája; gráfok Descartes&#x2013;szorzat; páros gráf
+(két&#x00ad;részes gráf); rész&#x00ad;gráf; szuper&#x00ad;gráf; telített rész&#x00ad;gráf;
+rész&#x00ad;gráfnak a komplementere; egyszerű gráf komplementere; séta;
+vonal; út; kör; össze&#x00ad;függőség; komponensek; fa; erdő;
+feszítő&#x00ad;fa; feszítő&#x00ad;erdő; vágás; erdő; Euler&#x2013;vonal;
+Ha&#x00ad;mil&#x00ad;ton&#x2013;út; Hamilton&#x2013;kör; címkézett és súlyozott gráf.
+</p>
+</div>
+</div>
+<div id="outline-container-orgheadline2" class="outline-4">
+<h4 id="orgheadline2"><span class="section-number-4">1.1.2</span> Irányított Gráf</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+Irányított gráf; irányított gráf megfordítása; szigorúan
+párhuzamos él; csúcs ki&#x00ad;foka; csúcs be&#x00ad;foka; ki&#x00ad;fok összege,
+be&#x00ad;fok összege és élek száma közötti összefüggés; irányított
+gráfok izomorfiája; véges gráfok él&#x00ad;listás ábrázolása; irányított
+rész&#x00ad;gráf; irányított séta; irányított vonal; irányított út;
+irányított kör; erős össze&#x00ad;függőség; erős komponensek; irányított
+fa; jól&#x00ad;színezés; kromatikus szám; gráfok mátrixai; síkban
+rajzolható gráf; Euler formula; topologikus izomorfia; Kuratowski
+tétel.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline16" class="outline-3">
+<h3 id="orgheadline16"><span class="section-number-3">1.2</span> Tételek</h3>
+<div class="outline-text-3" id="text-1-2">
+</div><div id="outline-container-orgheadline4" class="outline-4">
+<h4 id="orgheadline4"><span class="section-number-4">1.2.1</span> Bizonyítás nélkül</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<p>
+Dirac és Ore tétel
+ (<a href="https://hu.wikipedia.org/wiki/Hamilton-k%C3%B6r">https://hu.wikipedia.org/wiki/Hamilton-k%C3%B6r</a>); Dijkstra
+ módszer (7.2.22).
+</p>
+</div>
+</div>
+<div id="outline-container-orgheadline15" class="outline-4">
+<h4 id="orgheadline15"><span class="section-number-4">1.2.2</span> Bizonyítással</h4>
+<div class="outline-text-4" id="text-1-2-2">
+</div><ol class="org-ol"><li><a id="orgheadline5"></a>Állíŧás arról hogyan lehet sétából utat kapni (7.1.20)<br  /></li>
+<li><a id="orgheadline6"></a>Állítás a zárt vonalak jellemzéséről körökkel (7.1.21)<br  /></li>
+<li><a id="orgheadline7"></a>Fa ekvivalens definícióira vonatkozó tétel (7.1.29)<br  /></li>
+<li><a id="orgheadline8"></a>Kör&#x00ad;mentes fák és első&#x00ad;fokú csúcsok kapcsolatát leíró állítás (7.1.30)<br  /></li>
+<li><a id="orgheadline9"></a>Fákban, a csúcsok és élek számának összefüggését leíró tétel (7.1.31)<br  /></li>
+<li><a id="orgheadline10"></a>Összefüggő gráf feszítő&#x00ad;fáinak létezésére vonatkozó állítás (7.1.37)<br  /></li>
+<li><a id="orgheadline11"></a>Összefüggő gráfban, körök számára vonatkozó tétel (7.1.38)<br  /></li>
+<li><a id="orgheadline12"></a>Összefüggő gráfban, vágások számára vonatkozó tétel (7.1.41)<br  /></li>
+<li><a id="orgheadline13"></a>Összefüggő véges gráfban Zárt Euler&#x2013;vonal létezéséről, illetve él&#x00ad;diszjunkt vonalakra való felbontására vonatkozó tétel (7.1.45)<br  /></li>
+<li><a id="orgheadline14"></a>Kruskal algoritmus<br  /></li></ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline50" class="outline-2">
+<h2 id="orgheadline50"><span class="section-number-2">2</span> Algebra</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-orgheadline20" class="outline-3">
+<h3 id="orgheadline20"><span class="section-number-3">2.1</span> Definíciók</h3>
+<div class="outline-text-3" id="text-2-1">
+</div><div id="outline-container-orgheadline18" class="outline-4">
+<h4 id="orgheadline18"><span class="section-number-4">2.1.1</span> Csoportok</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+Grupoid; fél&#x00ad;csoport; (jobboldali, baloldali) egység elem;
+monoid; (jobboldali, baloldali) inverz; csoport; Abel&#x2013;csoport;
+homomorfizmus; monomorfizmus; epimorfizmus; izomorfizmus;
+endomorfizmus; automorfizmus; rész&#x00ad;fél&#x00ad;csoport; rész&#x00ad;csoport;
+Klein csoport; generátum; ciklikus csoport; diéder csoport;
+csoport rendje; elem rendje; jobb és baloldali mellék&#x00ad;osztályok;
+normálosztó; faktor&#x00ad;csoport; homomorfizmus magja; direkt szorzat.
+</p>
+</div>
+</div>
+<div id="outline-container-orgheadline19" class="outline-4">
+<h4 id="orgheadline19"><span class="section-number-4">2.1.2</span> Gyűrűk és testek</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<p>
+Gyűrű; null&#x00ad;osztó&#x00ad;mentes gyűrű; kommutatív gyűrű; integritási
+tartomány; egység&#x00ad;elemes integritási tartomány; ferde&#x00ad;testek;
+testek; \(példa gyűrűre (\mathbb{Z}[\alpha])\); gyűrű
+homomorfizmusok; gyűrű karakterisztikája;
+Frobenius&#x2013;endomorfizmus; rész&#x00ad;gyűrű; ideál; mellék&#x00ad;osztályok;
+faktor&#x00ad;gyűrű; példa faktor&#x00ad;gyűrűre; homomorfizmus magja; gyűrűk
+direkt szorzata; Gauss&#x2013;gyűrűk; példa gyűrűre ami nem
+Gauss&#x2013;gyűrű; Euklideszi gyűrűk; hányados&#x00ad;test.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline49" class="outline-3">
+<h3 id="orgheadline49"><span class="section-number-3">2.2</span> Tételek</h3>
+<div class="outline-text-3" id="text-2-2">
+</div><div id="outline-container-orgheadline25" class="outline-4">
+<h4 id="orgheadline25"><span class="section-number-4">2.2.1</span> Bizonyítás nélkül</h4>
+<div class="outline-text-4" id="text-2-2-1">
+</div><ol class="org-ol"><li><a id="orgheadline21"></a>Ciklikus csoport rész&#x00ad;csoportjait és generátorait leíró tétel (8.1.41)<br  /></li>
+<li><a id="orgheadline22"></a>Prímszám&#x00ad;rendű ciklikus csoportokra vonatkozó tétel (8.1.55)<br  /></li>
+<li><a id="orgheadline23"></a>Véges Abel&#x2013;csoportok alap&#x00ad;tétele (8.1.93)<br  /></li>
+<li><a id="orgheadline24"></a>Cayley tétel (8.1.102)<br  /></li></ol>
+</div>
+<div id="outline-container-orgheadline48" class="outline-4">
+<h4 id="orgheadline48"><span class="section-number-4">2.2.2</span> Bizonyítással</h4>
+<div class="outline-text-4" id="text-2-2-2">
+</div><ol class="org-ol"><li><a id="orgheadline26"></a>Asszociativitás, egység&#x00ad;elem, inverz és kommutatív elemek homomorf képeiről szóló tétel és az ide tartozó következmény (8.1.8 és 8.1.9)<br  /></li>
+<li><a id="orgheadline27"></a>Csoport ekvivalens definícióiról szóló tétel és az egyszerűsítési szabály (8.1.13 8.1.14)<br  /></li>
+<li><a id="orgheadline28"></a>Rész&#x00ad;csoport ekvivalens definícióiról szóló állítás (8.1.27 és 8.1.28)<br  /></li>
+<li><a id="orgheadline29"></a>Rész&#x00ad;csoportok metszetére vonatkozó következmény (8.1.29)<br  /></li>
+<li><a id="orgheadline30"></a>Generátumot jellemző állítás és a ciklikus csoportokra vonatkozó következmény (8.1.33 8.1.34)<br  /></li>
+<li><a id="orgheadline31"></a>Ciklikus csoportokat leíró tétel (8.1.38)<br  /></li>
+<li><a id="orgheadline32"></a>Ciklikus csoportok rész&#x00ad;csoportjára vonatkozó tétel (8.1.40)<br  /></li>
+<li><a id="orgheadline33"></a>Lagrange tétel és következményei (8.1.52, 8.1.53 és 8.1.54)<br  /></li>
+<li><a id="orgheadline34"></a>Normálosztó ekvivalens definícióira vonatkozó tétel (8.1.71)<br  /></li>
+<li><a id="orgheadline35"></a>Normálosztók metszetére vonatkozó tétel (8.1.72)<br  /></li>
+<li><a id="orgheadline36"></a>Normálosztó szerinti mellék&#x00ad;osztályok és a művelet kapcsolatára vonatkozó tétel és az ide tartozó következmény (8.1.80 és 8.1.81)<br  /></li>
+<li><a id="orgheadline37"></a>Homomorfizmus&#x00ad;tétel (8.1.85)<br  /></li>
+<li><a id="orgheadline38"></a>Gyűrű homomorf képére vonatkozó tétel (8.2.18)<br  /></li>
+<li><a id="orgheadline39"></a>Nullosztó&#x00ad;mentes gyűrűben a nem nulla elemek additív rendjére vonatkozó tétel (8.2.19)<br  /></li>
+<li><a id="orgheadline40"></a>Gyűrűben ideál szerinti mellék&#x00ad;osztályokra és a műveletre vonatkozó tétel és az ide tartozó következmény (8.2.48 és 8.2.49)<br  /></li>
+<li><a id="orgheadline41"></a>Gyűrű homomorfizmus&#x2013;tétel (8.2.54)<br  /></li>
+<li><a id="orgheadline42"></a>Kommutatív egység&#x00ad;elemes gyűrűben a fő&#x00ad;ideálokra vonatkozó tétel és a hozzá tartozó következmény (8.2.65 és 8.2.66)<br  /></li>
+<li><a id="orgheadline43"></a>Gauss gyűrűben a prím és irreducibilis elemek kapcsolata (8.2.67 vége)<br  /></li>
+<li><a id="orgheadline44"></a>Euklideszi gyűrű elemei és a \(\varphi\) függvény kapcsolatára vonatkozó állítás (8.2.70)<br  /></li>
+<li><a id="orgheadline45"></a>Bővített Euklideszi algoritmus Euklideszi gyűrűben (8.2.75)<br  /></li>
+<li><a id="orgheadline46"></a>Euklideszi gyűrűben a prímek és felbonthatatlan kapcsolatára vonatkozó tétel (8.2.76)<br  /></li>
+<li><a id="orgheadline47"></a>Euklideszi gyűrű és Gauss&#x2013;gyűrű kapcsolatára vonatkozó tétel (8.2.77)<br  /></li></ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline70" class="outline-2">
+<h2 id="orgheadline70"><span class="section-number-2">3</span> Polinomok <code>[0%]</code></h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-orgheadline51" class="outline-3">
+<h3 id="orgheadline51"><span class="section-number-3">3.1</span> <span class="todo TODO">TODO</span> Definíciók</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Formális hatvány sorok gyűrűje és a rajta értelmezett műveletek
+\((R[\![x]\!], +, \cdot)\); \((R[x],+,\cdot)\) egy&#x00ad;határozatlanú
+polinom gyűrű és rajta értelmezett műveletek; konstans polinom;
+együttható; konstans tag; fő&#x00ad;együttható; fő&#x00ad;tag; polinom foka;
+null&#x00ad;polinom; lineáris polinom; monom; fő&#x00ad;polinom
+(normál&#x00ad;polinom); polinom&#x00ad;függvény; pszeudo&#x00ad;osztás;
+Horner&#x2013;elrendezés; algebrai derivált; többszörös gyökök; 
+</p>
+</div>
+</div>
+<div id="outline-container-orgheadline69" class="outline-3">
+<h3 id="orgheadline69"><span class="section-number-3">3.2</span> Tétel</h3>
+<div class="outline-text-3" id="text-3-2">
+</div><div id="outline-container-orgheadline59" class="outline-4">
+<h4 id="orgheadline59"><span class="section-number-4">3.2.1</span> Bizonyítás nélkül</h4>
+<div class="outline-text-4" id="text-3-2-1">
+</div><ol class="org-ol"><li><a id="orgheadline52"></a>\(R\) elemei megfeleltetése \(R[x]\)-ben<br  /></li>
+<li><a id="orgheadline53"></a>\(R\) tulajdonságai és \(R[x]\) tulajdonságai kapcsolatára vonatkozó állítás<br  /></li>
+<li><a id="orgheadline54"></a>Wilson tétel<br  /></li>
+<li><a id="orgheadline55"></a>Algebrai derivált tulajdonságai<br  /></li>
+<li><a id="orgheadline56"></a>Irreducibilis polinomok és test&#x00ad;bővítés (8.3.40)<br  /></li>
+<li><a id="orgheadline57"></a>Véges testek elem&#x00ad;száma és a megjegyzés (8.3.54 és 8.3.55)<br  /></li>
+<li><a id="orgheadline58"></a>Véges testek multiplikatív csoportjára vonatkozó tétel (8.3.58)<br  /></li></ol>
+</div>
+<div id="outline-container-orgheadline68" class="outline-4">
+<h4 id="orgheadline68"><span class="section-number-4">3.2.2</span> Bizonyítással</h4>
+<div class="outline-text-4" id="text-3-2-2">
+</div><ol class="org-ol"><li><a id="orgheadline60"></a>Maradékos osztás tétele polinomokra (8.3.8)<br  /></li>
+<li><a id="orgheadline61"></a>Gyök&#x00ad;tényező leválasztása (8.3.9)<br  /></li>
+<li><a id="orgheadline62"></a>Polinom gyökére és fok&#x00ad;számára vonatkozó következmény (8.3.10)<br  /></li>
+<li><a id="orgheadline63"></a>Két polinom megegyezésére vonatkozó következmény (8.3.11)<br  /></li>
+<li><a id="orgheadline64"></a>Polinom és polinom&#x00ad;függvény kapcsolatát leíró következmény (8.3.12)<br  /></li>
+<li><a id="orgheadline65"></a>Test feletti polinom gyűrűre vonatkozó következmény (8.3.13)<br  /></li>
+<li><a id="orgheadline66"></a>Egy polinom osztói és deriváltját leíró tétel és az ide tartozó következmény (8.3.31 és 8.3.32)<br  /></li>
+<li><a id="orgheadline67"></a>Többszörös gyökökre és a deriváltra vonatkozó tétel és megjegyzés (8.3.34 és 8.3.35)<br  /></li></ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline74" class="outline-2">
+<h2 id="orgheadline74"><span class="section-number-2">4</span> Kódolás <code>[0%]</code></h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-orgheadline71" class="outline-3">
+<h3 id="orgheadline71"><span class="section-number-3">4.1</span> <span class="todo TODO">TODO</span> Definíciók</h3>
+</div>
+<div id="outline-container-orgheadline72" class="outline-3">
+<h3 id="orgheadline72"><span class="section-number-3">4.2</span> <span class="todo TODO">TODO</span> Tétel</h3>
+</div>
+<div id="outline-container-orgheadline73" class="outline-3">
+<h3 id="orgheadline73"><span class="section-number-3">4.3</span> <span class="todo TODO">TODO</span> Tétel Bizonyítás</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Szerz&otilde;: Mikecz Márk László</p>
+<p class="date">Created: 2016-04-20 sze 14:30</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
