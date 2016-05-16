@@ -1,4 +1,5 @@
 # -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
+#+OPTIONS: toc:nil
 #+TITLE: Diszkrét Matematika 2 Vizsga\-tematika
 #+AUTHOR: Mikecz Márk László
 #+EMAIL: mikecz.mark.laszlo[at]gmail[dot]com
@@ -91,24 +92,32 @@
 **** Bővített Euklideszi algoritmus Euklideszi gyűrűben (8.2.75)
 **** Euklideszi gyűrűben a prímek és felbonthatatlan kapcsolatára vonatkozó tétel (8.2.76)
 **** Euklideszi gyűrű és Gauss--gyűrű kapcsolatára vonatkozó tétel (8.2.77)
-* Polinomok [0%]
-** TODO Definíciók
+* Polinomok
+** Definíciók
+*** Polinomok
    Formális hatvány sorok gyűrűje és a rajta értelmezett műveletek
    $(R[\![x]\!], +, \cdot)$; $(R[x],+,\cdot)$ egy\-határozatlanú
    polinom gyűrű és rajta értelmezett műveletek; konstans polinom;
    együttható; konstans tag; fő\-együttható; fő\-tag; polinom foka;
    null\-polinom; lineáris polinom; monom; fő\-polinom
    (normál\-polinom); polinom\-függvény; pszeudo\-osztás;
-   Horner--elrendezés; algebrai derivált; többszörös gyökök; 
-** Tétel
+   Horner--elrendezés.
+*** Többszörös gyökök
+    Algebrai derivált; többszörös gyökök; primitív polinomok; Lagrange
+    interpoláció; titok\-megosztás.
+** Tételek
 *** Bizonyítás nélkül
 **** $R$ elemei megfeleltetése \(R[x]\)-ben
 **** $R$ tulajdonságai és $R[x]$ tulajdonságai kapcsolatára vonatkozó állítás
 **** Wilson tétel
 **** Algebrai derivált tulajdonságai 
 **** Irreducibilis polinomok és test\-bővítés (8.3.40)
-**** Véges testek elem\-száma és a megjegyzés (8.3.54 és 8.3.55)
+**** Véges testek elem\-száma és a megjegyzés (8.3.54, 8.3.55 és 8.3.61)
+**** Véges testek alap tétele (8.3.110)
 **** Véges testek multiplikatív csoportjára vonatkozó tétel (8.3.58)
+**** Irreducibilis polinomok (8.3.64)
+**** Gauss tétele (8.3.68)
+**** Schönemann-Eisenstein-tétel (8.3.77)
 *** Bizonyítással
 **** Maradékos osztás tétele polinomokra (8.3.8)
 **** Gyök\-tényező leválasztása (8.3.9)
@@ -118,7 +127,26 @@
 **** Test feletti polinom gyűrűre vonatkozó következmény (8.3.13)
 **** Egy polinom osztói és deriváltját leíró tétel és az ide tartozó következmény (8.3.31 és 8.3.32)
 **** Többszörös gyökökre és a deriváltra vonatkozó tétel és megjegyzés (8.3.34 és 8.3.35)
-* Kódolás [0%]
-** TODO Definíciók
-** TODO Tétel
-** TODO Tétel Bizonyítás
+* Kódolás
+** Definíciók
+*** Forrás kódolás
+    Gyakoriság; relatív gyakoriság egyedi információ\-tartalom;
+    információ egysége; entrópia (vagy átlagos információ\-tartalom);
+    relatív entrópia; felbontható (vagy egyértelműen dekódolható, vagy
+    veszteség\-mentes) kód; betűnkénti kódolás; kód\-fa; prefix kód;
+    egyenletes kód; vesszős kód; átlagos szó\-hossz; optimális kód.
+*** Hiba\-korlátozó kódolás
+    Paritás\-bit; \(t\)-hiba\-jelző kód, pontosan \(t\)-hiba\-jelző
+    kód; Hamming távolság; Hamming súly; minimális távolságú
+    dekódolás; \(t\)-hiba\-javító kód, pontosan \(t\)-hiba\-javító
+    kód; tökéletes kód; MDS kód; lineáris kód; generátor mátrix;
+    ellenőrző mátrix; szindróma; polinom kód; ciklikus kód.
+** Tételek
+*** Bizonyítás nélkül
+**** McMillan-egyenlőtlenség (9.2.9)
+**** Shannon tétele zajmentes csatornákra (9.2.15)
+**** Shannon-kód létezése és Huffman kód (9.2.16 és 9.2.18)
+**** Szindróma dekódolás (9.3.15)
+*** Bizonyítással
+**** Hamming korlát (9.3.11)
+**** Singleton korlát (9.3.12)
