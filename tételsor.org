@@ -1,11 +1,14 @@
 # -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
 #+OPTIONS: toc:nil
+#+LATEX_CLASS_OPTIONS: [10pt,twocolumn]
 #+LATEX_HEADER: \usepackage{paralist}
+#+LATEX_HEADER: \usepackage[margin=12mm]{geometry}
 #+LATEX_HEADER: \renewenvironment{enumerate}[1]{\begin{compactenum}#1}{\end{compactenum}}
+#+LATEX_HEADER: \pagestyle{empty}
 
 #+TITLE: Diszkrét Matematika 2 Vizsga\-tematika
-#+AUTHOR: Mikecz Márk László
-#+EMAIL: mikecz.mark.laszlo[at]gmail[dot]com
+#+AUTHOR: 
+#+DATE:
 #+LANGUAGE: hu
 
 * Gráfok
@@ -33,9 +36,8 @@
     tétel.
 ** Tételek
 *** Bizonyítás nélkül
-    Dirac és Ore tétel
-     (https://hu.wikipedia.org/wiki/Hamilton-k%C3%B6r); Dijkstra
-     módszer (7.2.22).
+**** Dirac és Ore tétel (https://hu.wikipedia.org/wiki/Hamilton-k%C3%B6r); 
+**** Dijkstra módszer (7.2.22).
 *** Bizonyítással
 **** Állítás arról hogyan lehet sétából utat kapni (7.1.20)
 **** Állítás a zárt vonalak jellemzéséről körökkel (7.1.21)
@@ -60,7 +62,7 @@
 *** Gyűrűk és testek
     Gyűrű; null\-osztó\-mentes gyűrű; kommutatív gyűrű; integritási
     tartomány; egység\-elemes integritási tartomány; ferde\-testek;
-    testek; $példa gyűrűre (\mathbb{Z}[\alpha])$; gyűrű
+    testek; példa gyűrűre $(\mathbb{Z}[\alpha])$; gyűrű
     homomorfizmusok; gyűrű karakterisztikája;
     Frobenius--endomorfizmus; rész\-gyűrű; ideál; mellék\-osztályok;
     faktor\-gyűrű; példa faktor\-gyűrűre; homomorfizmus magja; gyűrűk
@@ -74,7 +76,7 @@
 **** Cayley tétel (8.1.102)
 *** Bizonyítással
 **** Asszociativitás, egység\-elem, inverz és kommutatív elemek homomorf képeiről szóló tétel és az ide tartozó következmény (8.1.8 és 8.1.9)
-**** Csoport ekvivalens definícióiról szóló tétel és az egyszerűsítési szabály (8.1.13 8.1.14)
+**** Csoport ekvivalens definícióiról szóló tétel és az egyszerűsítési szabály (8.1.13 és 8.1.14)
 **** Rész\-csoport ekvivalens definícióiról szóló állítás (8.1.27 és 8.1.28)
 **** Rész\-csoportok metszetére vonatkozó következmény (8.1.29)
 **** Generátumot jellemző állítás és a ciklikus csoportokra vonatkozó következmény (8.1.33 8.1.34)
@@ -106,14 +108,13 @@
    (normál\-polinom); polinom\-függvény; pszeudo\-osztás;
    Horner--elrendezés.
 *** Többszörös gyökök
-    Algebrai derivált; többszörös gyökök; primitív polinomok; Lagrange
-    interpoláció; titok\-megosztás.
+    Algebrai derivált; többszörös gyökök; primitív polinomok.
 ** Tételek
 *** Bizonyítás nélkül
-**** $R$ elemei megfeleltetése \(R[x]\)-ben
-**** $R$ tulajdonságai és $R[x]$ tulajdonságai kapcsolatára vonatkozó állítás
-**** Wilson tétel
-**** Algebrai derivált tulajdonságai 
+**** $R$ elemei megfeleltetése \(R[x]\)-ben (8.3.1 konstans polinomok)
+**** $R$ tulajdonságai és $R[x]$ tulajdonságai kapcsolatára vonatkozó állítás (8.3.1 vége, 8.5 ábra)
+**** Wilson tétel (8.3.28)
+**** Algebrai derivált tulajdonságai (8.3.29)
 **** Irreducibilis polinomok és test\-bővítés (8.3.40)
 **** Véges testek elem\-száma és a megjegyzés (8.3.54, 8.3.55 és 8.3.61)
 **** Véges testek alap tétele (8.3.110)
@@ -130,6 +131,7 @@
 **** Test feletti polinom gyűrűre vonatkozó következmény (8.3.13)
 **** Egy polinom osztói és deriváltját leíró tétel és az ide tartozó következmény (8.3.31 és 8.3.32)
 **** Többszörös gyökökre és a deriváltra vonatkozó tétel és megjegyzés (8.3.34 és 8.3.35)
+**** Lagrange interpoláció és titok\-megosztás (8.3.82 és 8.3.83)
 * Kódolás
 ** Definíciók
 *** Forrás kódolás
@@ -153,3 +155,25 @@
 *** Bizonyítással
 **** Hamming korlát (9.3.11)
 **** Singleton korlát (9.3.12)
+* Törzsanyag
+**** Fa ekvivalens definícióira vonatkozó tétel (7.1.29)
+**** Fákban, a csúcsok és élek számának összefüggését leíró tétel (7.1.31)
+**** Összefüggő véges gráfban Zárt Euler--vonal létezéséről, illetve él\-diszjunkt vonalakra való felbontására vonatkozó tétel (7.1.45)
+**** Kruskal algoritmus
+**** Csoport ekvivalens definícióiról szóló tétel és az egyszerűsítési szabály (8.1.13 és 8.1.14)
+**** Rész\-csoport ekvivalens definícióiról szóló állítás (8.1.27 és 8.1.28)
+**** Rész\-csoportok metszetére vonatkozó következmény (8.1.29)
+**** Ciklikus csoportokat leíró tétel (8.1.38)
+**** Lagrange tétel és következményei (8.1.52, 8.1.53 és 8.1.54)
+**** Normálosztó szerinti mellék\-osztályok és a művelet kapcsolatára vonatkozó tétel és az ide tartozó következmény (8.1.80 és 8.1.81)
+**** Homomorfizmus\-tétel (8.1.85)
+**** Nullosztó\-mentes gyűrűben a nem nulla elemek additív rendjére vonatkozó tétel (8.2.19)
+**** Kommutatív egység\-elemes gyűrűben a fő\-ideálokra vonatkozó tétel és a hozzá tartozó következmény (8.2.65 és 8.2.66)
+**** Gauss gyűrűben a prím és irreducibilis elemek kapcsolata (8.2.67 vége)
+**** Bővített Euklideszi algoritmus Euklideszi gyűrűben (8.2.75)
+**** Euklideszi gyűrűben a prímek és felbonthatatlan kapcsolatára vonatkozó tétel (8.2.76)
+**** Maradékos osztás tétele polinomokra (8.3.8)
+**** Lagrange interpoláció és titok\-megosztás (8.3.82 és 8.3.83)
+**** Egy polinom osztói és deriváltját leíró tétel és az ide tartozó következmény (8.3.31 és 8.3.32)
+**** Többszörös gyökökre és a deriváltra vonatkozó tétel és megjegyzés (8.3.34 és 8.3.35)
+**** Hamming korlát (9.3.11)
