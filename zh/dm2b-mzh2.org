@@ -11,17 +11,17 @@
      Megoldás: [[http://compalg.inf.elte.hu/~zslang/PolinomokAlapjaiPeldatar.pdf][Polinomok Alapjai Példatár]] (Láng Zsuzsa honlapján)
      2.5-18 feladat.
   2. (Testbővítések) Legyen $f=x^3 -2x^2 +2 \in \Z_3[x]$, és végezzük
-     el a következő műveleteket $\Z_3[x]/(f)$-ben: $x^{-1}$ és $x^{-3}
-     \cdot (x^8+2x^2)$.  Igaz-e hogy $\Z_3[x]/(f)$ test?
+     el a következő műveleteket \(\Z_3[x]/(f)\)-ben: $x^{-1}$ és
+     $x^{-3} \cdot (x^8+2x^2)$.  Igaz-e hogy $\Z_3[x]/(f)$ test?
 
      Megoldás: $\Z_3[x]/(f)$ elemei a $\Z_3[x]$ maradék\-osztályok
      $\bmod f$, azaz olyan polinomok, hogy az együtthatókat $\bmod 3$
      kell venni, így $f=x^3+x^2+2$.  Tehát $x^3+x^2+2 \equiv 0
      \pmod{f}$, ezért $x^3 \equiv 2x^2 +1 \pmod{f}$.  Tudjuk, hogy
-     minden $\Z_3[x]/(f)$-beli osztály reprezentálható egy legfeljebb
+     minden \(\Z_3[x]/(f)\)-beli osztály reprezentálható egy legfeljebb
      másodfokú polinommal, így $x$ inverze is, azaz tegyük fel hogy
      $x^{-1}=Ax^2+Bx+C$ és oldjuk meg a következő kongruenciát $A$,
-     $B$ és $C$-re:
+     $B$ és \(C\)-re:
      \begin{align*}
      x\cdot x^{-1} = x\cdot (Ax^2 + Bx + C) &\equiv 1 \pmod{f}\\
      Ax^3 + Bx^2 + Cx &\equiv 1 \pmod{f}\\
@@ -94,13 +94,14 @@
         mátrix (egyenlőre permutált oszlopokkal).  \[
         H_1=\begin{pmatrix}
         1&1&1&1&0&0&0\\ 1&0&0&0&1&0&0\\ 1&1&1&0&0&1&0\\ 0&1&0&0&0&0&1
-        \end{pmatrix} \] Majd végrehajtva $H_1$ oszlopain az $G$-n
+        \end{pmatrix} \] Majd végrehajtva $H_1$ oszlopain az \(G\)-n
         végrehajtott oszlop\-csere inverzét, vagyis a $(2\,3\,4)$
-        permutációt, megkapjuk a $G$-hez tartozó \[ H=\begin{pmatrix}
+        permutációt, megkapjuk a \(G\)-hez tartozó \[
+        H=\begin{pmatrix}
         1&1&1&1&0&0&0\\ 1&0&0&0&1&0&0\\ 1&0&1&1&0&1&0\\ 0&0&1&0&0&0&1
         \end{pmatrix} \] Ha sor\-erével nem oldható meg a $G$ ilyen
         előállítása, akkor oszlop műveletek is megengedettek, ld
-        következő feladat.  
+        következő feladat.
 
 	A kód az $8$ elemű, ugyan is $k=3$ (az üzenetek hossza), $n=7$
         (az kód\-szavak hossza), $q=2$ (az ábécé elem\-száma), és a
@@ -142,7 +143,7 @@
         1&1&0&1&0&0&0\\ 1&0&0&0&1&0&0\\ 1&0&0&1&0&1&0\\ 0&0&1&0&0&0&1
         \end{pmatrix} \] Mivel a $G_2$ ellő\-állításához alkalmazott
         oszlop transzformáció miatt $G_1$ és $G_2$ által generált
-        altér megegyezik, ezért $H_1=H$ egy ellenőrző mátrixa $G$-nek.
+        altér megegyezik, ezért $H_1=H$ egy ellenőrző mátrixa \(G\)-nek.
 
 	Megjegyzés: most $d=2$ ugyanis $H$ 3. és 7. megegyezik, így
         összegük $0$, azaz összefüggőek.
