@@ -1,5 +1,8 @@
 # -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
 #+OPTIONS: toc:nil
+#+LATEX_HEADER: \usepackage{paralist}
+#+LATEX_HEADER: \renewenvironment{enumerate}[1]{\begin{compactenum}#1}{\end{compactenum}}
+
 #+TITLE: Diszkrét Matematika 2 Vizsga\-tematika
 #+AUTHOR: Mikecz Márk László
 #+EMAIL: mikecz.mark.laszlo[at]gmail[dot]com
@@ -34,7 +37,7 @@
      (https://hu.wikipedia.org/wiki/Hamilton-k%C3%B6r); Dijkstra
      módszer (7.2.22).
 *** Bizonyítással
-**** Állíŧás arról hogyan lehet sétából utat kapni (7.1.20)
+**** Állítás arról hogyan lehet sétából utat kapni (7.1.20)
 **** Állítás a zárt vonalak jellemzéséről körökkel (7.1.21)
 **** Fa ekvivalens definícióira vonatkozó tétel (7.1.29)
 **** Kör\-mentes fák és első\-fokú csúcsok kapcsolatát leíró állítás (7.1.30)
@@ -57,7 +60,7 @@
 *** Gyűrűk és testek
     Gyűrű; null\-osztó\-mentes gyűrű; kommutatív gyűrű; integritási
     tartomány; egység\-elemes integritási tartomány; ferde\-testek;
-    testek; $példa gyűrűre (\mathbb{Z}[\alhpa])$; gyűrű
+    testek; $példa gyűrűre (\mathbb{Z}[\alpha])$; gyűrű
     homomorfizmusok; gyűrű karakterisztikája;
     Frobenius--endomorfizmus; rész\-gyűrű; ideál; mellék\-osztályok;
     faktor\-gyűrű; példa faktor\-gyűrűre; homomorfizmus magja; gyűrűk
