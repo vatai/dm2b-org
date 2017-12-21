@@ -1,0 +1,26 @@
+# -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
+#+SETUPFILE: inc-vizsga.org
+Diszkrét matematika 2 (B) vizsga, 2016-06-23, Név (NK): \hrulefill
+1. Definiálja az üres gráf és az illeszkedési reláció fogalmát.
+2. Definiálja az össze\-függőség és a komponens fogalmát.
+3. Definiálja irányított fában a leveleket.
+4. Mit mondhatunk ciklikus csoport homomorf képéről?
+5. Definiálja rész\-csoport indexét.
+6. Definiálja két művelet esetén a monomorfizmus, az epimorfizmus és
+   az izomorfizmus fogalmát.
+7. Definiálja a lineáris polinomokat.
+8. Írja le az egységeket test feletti polinomok körében.
+9. Igaz--e, hogy $\mathbb{Z}[x]$ Gauss--gyűrű?
+10. Definiálja a prefix, egyenletes és vesszős kódot. Mi a
+    kapcsolatuk?
+11. Ismertesse a paritás\-bites kódot.
+12. Definiálja kód távolságát és súlyát.
+
+#+LATEX: \newpage
+#+ATTR_LATEX: :environment compactenum
+1. Fogalmazza meg a Dijkstra algoritmust és bizonyítsa be a rá
+   vonatkozó tételt.
+2. Fogalmazza meg és bizonyítsa be kompatibilis osztályozások és a
+   normálosztók közötti kapcsolatot leíró tételt.
+3. Fogalmazza meg és bizonyítsa be a gyök\-tényező leválasztására
+   vonatkozó állítást.

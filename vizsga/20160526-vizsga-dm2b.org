@@ -1,0 +1,26 @@
+# -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
+#+SETUPFILE: inc-vizsga.org
+Diszkrét matematika 2 (B) vizsga, 2016-05-26, Név (NK): \hrulefill
+1. Definiálja gráfban a fok\-szám és a reguláris gráf fogalmát.
+2. Definiálja a feszítő erdő fogalmát. Hány éle van egy véges gráf
+   feszítő erdőjének?
+3. Definiálja az irányított fa és gyökere fogalmát.
+4. Definiálja egy művelet esetén a monomorfizmus, az epimorfizmus és az
+   izomorfizmus fogalmát.
+5. Definiálja a generátum és a generátor\-rendszer fogalmát.
+6. Definiálja a jobb\-ideál, bal\-ideál és ideál fogalmát.
+7. Hogyan azonosíthatjuk a gyűrű elemeit bizonyos polinomokkal? Hogy
+   hívjuk ezeket a polinomokat?
+8. Milyen esetben kölcsönösen egyértelmű a megfeleltetés a polinomok
+   és a polinom\-függvények között? Fogalmazza meg az állítást.
+9. Igaz--e, hogy $\mathbb{Z}[x]$ euklideszi gyűrű?
+10. Definiálja egyedi üzenet információ\-tartalmát. Mi a bit?
+11. Fogalmazza meg Shannon tételét zaj\-mentes csatornára.
+12. Mi az MDS--kód és miért hívják így?
+#+LATEX: \newpage
+#+ATTR_LATEX: :environment compactenum
+1. Fogalmazzon meg és bizonyítson be két szükséges és elégséges
+   feltételt arra, hogy egy egyszerű gráf fa legyen.
+2. Fogalmazza meg és bizonyítsa be a bővített euklideszi algoritmust
+   euklideszi gyűrűben.
+3. Fogalmazza meg és bizonyítsa be a Hamming korlátot!

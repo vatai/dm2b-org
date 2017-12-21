@@ -1,0 +1,29 @@
+# -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
+#+SETUPFILE: inc-vizsga.org
+Diszkrét matematika 2 (B) vizsga, 2016-06-09, Név (NK): \hrulefill
+1. Definiálja a vonal fogalmát.
+2. Definiálja a súlyozott gráf fogalmát és egy véges rész\-halmaz
+   súlyát.
+3. Igaz\--e, hogy egy irányított gráf minden éle valamely erős
+   komponenshez tartozik?
+4. Definiálja egy művelet esetén az endomorfizmus és az automorfizmus
+   fogalmát.
+5. Definiálja a bal- és jobboldali mellék\-osztályokat.
+6. Igaz--e hogy Gauss--gyűrűben létezik legnagyobb közös osztó és
+   legkisebb közös többszörös?
+7. Fogalmazza meg a maradékos osztás tételét polinomokra.
+8. Milyen négy tulajdonsággal jellemezhető a polinomhoz az algebrai
+   deriváltját rendel leképezés?
+9. Fogalmazza meg a véges testek elem\-számát leíró tételt.
+10. Fogalmazza meg a McMillan--egyenltlenséget tartalmazó tételt.
+11. Definiálja a \(t\)-hiba jelző és pontosan \(t\)-hiba jelző kód
+    fogalmát.
+12. Mi a Singleton--korlát?
+#+LATEX: \newpage
+#+ATTR_LATEX: :environment compactenum
+1. Hogyan kaphatunk sétából utat? Fogalmazza meg és bizonyítsa be az
+   állítást!
+2. Mi a kapcsolat a polinom gyökei és a deriváltjának a gyökei között?
+   Fogalmazza meg és bizonyítsa be az állítást!
+3. Fogalmazza meg és bizonyítsa be a prím és irreducibilis elemek
+   kapcsolatát leíró tételt Gauss gyűrűben!

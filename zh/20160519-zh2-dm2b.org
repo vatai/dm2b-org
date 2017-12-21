@@ -1,0 +1,46 @@
+# -*- mode: org; mode: flyspell; ispell-local-dictionary: "hu" -*-
+#+SETUPFILE: inc-zh.org
+#+TITLE:
+#+AUTHOR:
+#+DATE:
+#+LATEX_HEADER: \usepackage{multicol}
+* Diszkrét matematika II. - 2. ZH - 2016-05-19. Név/Csoport: 
+  #+LATEX: \begin{multicols}{2}
+  1. Keressük meg a következő polinom többszörös gyökeit: $f = x^6 -
+     21x^4 + 147x^2 - 343 \in\C[x]$.
+  2. Keressük meg az $f = 5x^4 - 12x^3 - 33x^2 + 116x - 84$ és a $g =
+     20x^5 + 10x^4 + 45x^2 + 30x + 14$ polinom racionális gyökeit vagy
+     bizonyítsuk be hogy irreducibilisek \(\mathbb{Q}[x]\)-ban
+     (mondjuk a Schönemann-Eisenstein tétel segítségével).
+  3. Lagrange interpolációval határozzuk meg az a legfeljebb másodfokú
+     $f \in \Z_7[x]$ polinomot amelyre $\hat{f}(2)=2$, $\hat{f}(3)=1$,
+     és $\hat{f}(4)=5$.
+  4. 
+     1) Létezik-e bináris felbontható betűnkénti kód 2 db 2 hosszú, 1 db 3
+        hosszú, 2 db 5 hosszú és 1 db 6 hosszú kód\-szóval?
+     2) Milyen a legkisebb $r$ elemű kód\-ábécé amivel tudunk kódolni
+        olyan kódot ami tartalmaz 3 db 1 hosszú és 10 db 2 hosszú
+        kódot?
+  5. Konstruáljunk ternáris Huffmann kódot a következő eloszláshoz:
+     $0.49, 0.16, 0.15, 0.11, 0.05, 0.04$.  Számoljuk ki az átlagos
+     szó\-hosszt, és az entrópiát.
+  6. Határozzuk meg a $G$ generátor mátrixhoz tartozó hiba\-ellenőrző
+     kódot.  Hány elemű a kód?  Mi a kód távolsága, hiba\-jelző és
+     hiba\-ellenőrző képessége?  Mi az $u=011$ üzenet kódja?  Mire
+     fogjuk (minimális távolságú dekódolással) dekódolni a $v =
+     100100$ bit\-sorozatot?
+     
+     \[ G=  \begin{pmatrix} 
+     1 & 0 & 0 \\
+     0 & 0 & 1 \\
+     1 & 1 & 1 \\
+     0 & 1 & 1 \\
+     1 & 1 & 0 \\
+     1 & 0 & 1 
+     \end{pmatrix}
+     \]
+  7. (Bónusz) Legyen $f = x^3 + 3x^2 + x + 1 \in \Z_5[x]$.  Végezzük
+     el a következő műveletet \(\Z_5[x]/(f)\)-ben: $x^{-4} \cdot
+     (x^7 + 3x^4 + 4)$.
+  #+LATEX:  \end{multicols}\vfill
+

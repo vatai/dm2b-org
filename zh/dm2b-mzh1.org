@@ -20,8 +20,8 @@
    Hamilton--köre a gráfnak.
 * Csoportok
 4. [@4] Legyen $n$ rögzített pozitív egész szám. Lássuk be, hogy az
-   $n$-edik egységgyökök halmaza a szorzásra nézve csoportot alkot.
-5. Legyen $n=50$ és jelölje $D_n$ a szabályos $n$-szög egybevágó
+   \(n\)-edik egységgyökök halmaza a szorzásra nézve csoportot alkot.
+5. Legyen $n=50$ és jelölje $D_n$ a szabályos \(n\)-szög egybevágó
    leképezéseit ahol a $\varepsilon$ az óramutató forgásának
    ellentétes irányba ($\circlearrowleft$) $\frac{2\pi}{n}$ radiánnal
    való forgatást a $\tau$ pedig a függőleges szimmetria tengelyre
