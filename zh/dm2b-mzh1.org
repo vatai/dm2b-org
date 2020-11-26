@@ -4,39 +4,46 @@
 #+AUTHOR:
 #+DATE: 2015 tavasz
 
+        
 * Gráfok
-1. Van--e olyan 7 pontú egyszerű gráf, melyben a csúcsok foka rendre
-   #+ATTR_LATEX: :environment compactenum
-   1) 4, 4, 4, 3, 3, 3, 3;
-   2) 6, 3, 3, 2, 2, 2, 0;
-   3) 5, 5, 5, 4, 4, 2, 2;
-   4) 5, 5, 5, 2, 2, 2, 1;
-2. Igazoljuk, hogy ha egy hurokélt nem tartalmazó véges gráf minden
-   pontjának foka 4, akkor élei színezhetők piros és kék színekkel
-   úgy, hogy minden szög\-ponthoz két piros és két kék él
-   illeszkedjen.
-3. Bizonyítsuk be, hogy ha egy véges összefüggő gráf $K$ köréből egy
-   élt eltörölve a gráf egy leghosszabb útját kapjuk, akkor $K$
-   Hamilton--köre a gráfnak.
+  1. Van--e olyan 7 pontú egyszerű gráf, melyben a csúcsok foka rendre
+     #+ATTR_LATEX: :environment compactenum
+     1) 4, 4, 4, 3, 3, 3, 3;
+     2) 6, 3, 3, 2, 2, 2, 0;
+     3) 5, 5, 5, 4, 4, 2, 2;
+     4) 5, 5, 5, 2, 2, 2, 1.
+  2. Bizonyítsuk be, hogy ha egy véges összefüggő gráf $K$ köréből egy
+     élt eltörölve a gráf egy leghosszabb útját kapjuk, akkor $K$
+     Hamilton--köre a gráfnak.
+  3. Prüfer-kód:
+     1. Rajzoljunk olyan fát, melynek a Prüfer-kódja: 11342!
+     2. Rajzoljunk olyan fát, melynek a Prüfer-kódja: 111...1!
+     3. Mi az alábbi fa Prüfer-kódja?
+
+  #+BEGIN_EXPORT latex
+    \begin{tikzpicture}[every node/.style={draw,circle,scale=0.7}]
+    \node {3} child { node {1}} child { node {2}}
+      child { node {4} child {node {6}}}
+      child { node {5} child {node {7}}};
+    \end{tikzpicture}
+  #+END_EXPORT
 * Csoportok
-4. [@4] Legyen $n$ rögzített pozitív egész szám. Lássuk be, hogy az
-   \(n\)-edik egységgyökök halmaza a szorzásra nézve csoportot alkot.
-5. Legyen $n=50$ és jelölje $D_n$ a szabályos \(n\)-szög egybevágó
-   leképezéseit ahol a $\varepsilon$ az óramutató forgásának
-   ellentétes irányba ($\circlearrowleft$) $\frac{2\pi}{n}$ radiánnal
-   való forgatást a $\tau$ pedig a függőleges szimmetria tengelyre
-   való tükrözést jelöli.
-   1. Soroljuk fel $D_n$ elemeit.
-   2. Hogy lehetne a $\varphi \circ \tau \circ \varphi^2 \circ \tau
-      \circ \varphi$ elemet egyszerűbben kifejezni.
-   3. Mi az előző pontban szereplő elem rendje és generátuma?
-   4. Mi az előző pontban szereplő generátum szerinti mellék
-      osztályok?
-
-
-6. A komplex számok $\C$ halmazában a $*$ és $\circ$ műveleteket az
-   alábbi módon értelmezzük: $a * b = a + b + 1$, $a \circ b = a +
-   b + i$.  Igazoljuk, hogy a $(\C, *)$ és a $(\C, \circ)$ struktúrák
-   csoportok.  Igazoljuk, hogy az $\varphi : a \to ai$ leképezés
-   izomorfizmust létesít a $(\C, *)$ és a $(\C, \circ)$ csoportok
-   között.
+  4. [@4] Legyen $n$ rögzített pozitív egész szám. Lássuk be, hogy az
+     \(n\)-edik egységgyökök halmaza a szorzásra nézve csoportot alkot.
+  5. Legyen $n=50$ és jelölje $D_n$ a szabályos \(n\)-szög egybevágó
+     leképezéseit ahol a $\varepsilon$ az óramutató forgásának
+     ellentétes irányba ($\circlearrowleft$) $\frac{2\pi}{n}$ radiánnal
+     való forgatást a $\tau$ pedig a függőleges szimmetria tengelyre
+     való tükrözést jelöli.
+     1. Soroljuk fel $D_n$ elemeit.
+     2. Hogy lehetne a $\varphi \circ \tau \circ \varphi^2 \circ \tau
+        \circ \varphi$ elemet egyszerűbben kifejezni.
+     3. Mi az előző pontban szereplő elem rendje és generátuma?
+     4. Mi az előző pontban szereplő generátum szerinti mellék
+        osztályok?
+  6. A komplex számok $\C$ halmazában a $*$ és $\circ$ műveleteket az
+     alábbi módon értelmezzük: $a * b = a + b + 1$, $a \circ b = a +
+     b + i$.  Igazoljuk, hogy a $(\C, *)$ és a $(\C, \circ)$ struktúrák
+     csoportok.  Igazoljuk, hogy az $\varphi : a \to ai$ leképezés
+     izomorfizmust létesít a $(\C, *)$ és a $(\C, \circ)$ csoportok
+     között.
